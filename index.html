@@ -1,0 +1,2189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>看料今日美好生活回家的路 - 生活影像社区_记录每一段归途与日常</title>
+<meta name="description" content="看料今日美好生活回家的路官方网站，是一家专注生活影像与归途故事的视频内容社区，用原创高清内容记录日常温度、城市探索与家庭陪伴，与创作者共建值得信赖的内容生态。">
+<meta name="keywords" content="看料今日美好生活回家的路,生活影像,视频社区,官方网站,原创内容,回家,美好生活">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f97316'/%3E%3Cpath d='M20 34 L32 22 L44 34 L44 46 L38 46 L38 38 L26 38 L26 46 L20 46 Z' fill='%23fff7ed'/%3E%3C/svg%3E">
+<style>
+:root{
+  --kl-amber:#f97316;
+  --kl-amber-deep:#ea580c;
+  --kl-amber-soft:#fff3e6;
+  --kl-cream:#fdfaf5;
+  --kl-cream-2:#f7f0e5;
+  --kl-ink:#2b2118;
+  --kl-ink-2:#4a3c2e;
+  --kl-muted:#8a7763;
+  --kl-line:#e8ddcc;
+  --kl-teal:#0f766e;
+  --kl-rose:#c2410c;
+  --kl-radius:18px;
+  --kl-shadow:0 10px 30px rgba(120,80,30,.10);
+  --kl-shadow-lg:0 20px 50px rgba(120,80,30,.16);
+  --kl-sticky-h:104px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--kl-sticky-h);}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--kl-cream);
+  color:var(--kl-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+
+/* ===== 吸顶容器 ===== */
+.kl-sticky-wrap{
+  position:sticky;top:0;z-index:120;
+  background:rgba(253,250,245,.96);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 18px rgba(120,80,30,.06);
+}
+
+/* ===== 公告条 ===== */
+.kl-notice-bar{
+  display:flex;align-items:center;gap:12px;
+  padding:9px clamp(16px,4vw,56px);
+  background:linear-gradient(90deg,#ea580c,#f59e0b 60%,#f97316);
+  color:#fff7ed;font-size:13px;letter-spacing:.2px;
+  overflow:hidden;
+}
+.kl-notice-bar .kl-notice-tag{
+  flex:none;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);
+  padding:1px 9px;border-radius:999px;font-size:12px;font-weight:600;
+}
+.kl-notice-track{display:flex;align-items:center;gap:34px;white-space:nowrap;overflow:hidden;flex:1;}
+.kl-notice-track li{display:flex;align-items:center;gap:8px;font-size:13px;flex:none;}
+.kl-notice-track li::before{content:"◆";font-size:8px;opacity:.75;}
+.kl-notice-track b{font-weight:700;color:#fff;}
+.kl-notice-close{flex:none;font-size:18px;line-height:1;opacity:.85;padding:0 4px;}
+.kl-notice-close:hover{opacity:1;}
+
+/* ===== 页头 ===== */
+.kl-site-header{
+  display:flex;align-items:center;gap:clamp(16px,3vw,44px);
+  padding:12px clamp(16px,4vw,56px);
+  border-bottom:1px solid var(--kl-line);
+}
+.kl-brand{display:flex;align-items:center;gap:11px;flex:none;}
+.kl-brand-mark{
+  width:44px;height:44px;border-radius:13px;flex:none;
+  background:linear-gradient(135deg,#f97316,#ea580c);
+  display:grid;place-items:center;box-shadow:0 6px 16px rgba(234,88,12,.32);
+}
+.kl-brand-mark svg{width:26px;height:26px;}
+.kl-brand-text strong{display:block;font-size:17px;letter-spacing:.5px;line-height:1.2;}
+.kl-brand-text span{display:block;font-size:11px;color:var(--kl-muted);letter-spacing:2px;text-transform:uppercase;}
+.kl-main-nav{display:flex;align-items:center;gap:clamp(8px,1.6vw,22px);font-size:14.5px;}
+.kl-main-nav a{
+  position:relative;padding:6px 2px;color:var(--kl-ink-2);font-weight:500;white-space:nowrap;
+  transition:color .2s;
+}
+.kl-main-nav a::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;
+  background:var(--kl-amber);transform:scaleX(0);transform-origin:left;transition:transform .25s;
+}
+.kl-main-nav a:hover{color:var(--kl-amber-deep);}
+.kl-main-nav a:hover::after{transform:scaleX(1);}
+.kl-header-tools{display:flex;align-items:center;gap:10px;margin-left:auto;flex:none;}
+.kl-search{
+  display:flex;align-items:center;gap:7px;
+  background:#fff;border:1px solid var(--kl-line);border-radius:999px;
+  padding:6px 8px 6px 14px;transition:border-color .2s,box-shadow .2s;
+}
+.kl-search:focus-within{border-color:var(--kl-amber);box-shadow:0 0 0 4px rgba(249,115,22,.12);}
+.kl-search input{
+  border:none;outline:none;background:transparent;font-size:13.5px;width:clamp(90px,13vw,168px);color:var(--kl-ink);
+}
+.kl-search input::placeholder{color:#b6a793;}
+.kl-search button{
+  width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:var(--kl-amber-soft);color:var(--kl-amber-deep);
+}
+.kl-search button:hover{background:var(--kl-amber);color:#fff;}
+.kl-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:9px 20px;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.3px;
+  transition:transform .18s,box-shadow .18s,background .18s,color .18s;
+}
+.kl-btn-primary{background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;box-shadow:0 8px 20px rgba(234,88,12,.3);}
+.kl-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(234,88,12,.4);}
+.kl-btn-ghost{background:#fff;color:var(--kl-ink-2);border:1px solid var(--kl-line);}
+.kl-btn-ghost:hover{border-color:var(--kl-amber);color:var(--kl-amber-deep);transform:translateY(-2px);}
+.kl-nav-toggle{
+  display:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--kl-line);
+  background:#fff;place-items:center;flex:none;
+}
+.kl-nav-toggle span{display:block;width:18px;height:2px;background:var(--kl-ink);border-radius:2px;position:relative;}
+.kl-nav-toggle span::before,.kl-nav-toggle span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:var(--kl-ink);border-radius:2px;
+}
+.kl-nav-toggle span::before{top:-6px;}
+.kl-nav-toggle span::after{top:6px;}
+
+/* ===== 搜索提示 ===== */
+.kl-search-feedback{
+  position:absolute;top:calc(100% + 8px);right:clamp(16px,4vw,56px);
+  background:#fff;border:1px solid var(--kl-line);border-radius:14px;
+  box-shadow:var(--kl-shadow-lg);padding:12px 16px;font-size:13.5px;
+  max-width:320px;display:none;z-index:130;color:var(--kl-ink-2);line-height:1.6;
+}
+.kl-search-feedback.kl-is-open{display:block;}
+.kl-search-feedback b{color:var(--kl-amber-deep);}
+
+/* ===== Hero ===== */
+.kl-hero{
+  position:relative;
+  padding:clamp(40px,6vw,84px) clamp(16px,4vw,56px) clamp(34px,5vw,64px);
+  overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -10%,rgba(249,115,22,.14),transparent 65%),
+    radial-gradient(700px 380px at 4% 90%,rgba(15,118,110,.10),transparent 70%),
+    var(--kl-cream);
+}
+.kl-hero-grid{
+  max-width:1240px;margin:0 auto;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(26px,4vw,60px);align-items:center;
+}
+.kl-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--kl-amber-soft);color:var(--kl-amber-deep);
+  border:1px solid #fcd9b6;padding:5px 15px;border-radius:999px;
+  font-size:12.5px;font-weight:600;letter-spacing:1px;
+}
+.kl-hero-eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--kl-amber);box-shadow:0 0 0 4px rgba(249,115,22,.18);}
+.kl-hero h1{
+  font-size:clamp(30px,4.4vw,52px);line-height:1.2;letter-spacing:-.5px;
+  margin:18px 0 6px;font-weight:800;
+}
+.kl-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,#ea580c,#f59e0b 55%,#0f766e);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.kl-hero-slogan{
+  font-size:clamp(16px,1.8vw,20px);font-weight:600;color:var(--kl-ink-2);
+  margin-bottom:16px;letter-spacing:.5px;
+}
+.kl-hero-intro{font-size:15px;color:var(--kl-ink-2);max-width:640px;text-align:justify;}
+.kl-hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:26px;}
+.kl-hero-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;max-width:520px;
+}
+.kl-stat{
+  background:#fff;border:1px solid var(--kl-line);border-radius:15px;
+  padding:14px 10px;text-align:center;transition:transform .2s,box-shadow .2s;
+}
+.kl-stat:hover{transform:translateY(-3px);box-shadow:var(--kl-shadow);}
+.kl-stat strong{display:block;font-size:clamp(20px,2.4vw,26px);color:var(--kl-amber-deep);font-weight:800;line-height:1.2;}
+.kl-stat span{display:block;font-size:12px;color:var(--kl-muted);margin-top:3px;}
+
+/* Hero 视觉 */
+.kl-hero-visual{position:relative;}
+.kl-hero-frame{
+  position:relative;border-radius:26px;overflow:hidden;
+  box-shadow:var(--kl-shadow-lg);border:5px solid #fff;background:#fff;
+}
+.kl-hero-frame svg{width:100%;height:auto;display:block;}
+.kl-hero-frame-tag{
+  position:absolute;left:14px;top:14px;display:flex;gap:7px;align-items:center;
+  background:rgba(20,14,8,.62);color:#fff;backdrop-filter:blur(6px);
+  padding:5px 12px;border-radius:999px;font-size:12px;letter-spacing:.5px;
+}
+.kl-hero-frame-tag i{width:6px;height:6px;border-radius:50%;background:#f97316;}
+.kl-hero-play{
+  position:absolute;inset:0;margin:auto;width:66px;height:66px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .22s;
+}
+.kl-hero-play svg{width:24px;height:24px;margin-left:3px;}
+.kl-hero-frame:hover .kl-hero-play{transform:scale(1.09);}
+.kl-hero-float{
+  position:absolute;background:#fff;border:1px solid var(--kl-line);border-radius:16px;
+  padding:11px 15px;box-shadow:var(--kl-shadow);font-size:12.5px;line-height:1.45;
+}
+.kl-hero-float strong{display:block;font-size:14px;color:var(--kl-ink);}
+.kl-hero-float span{color:var(--kl-muted);}
+.kl-hero-float-1{left:-14px;bottom:34px;animation:kl-float 6s ease-in-out infinite;}
+.kl-hero-float-2{right:-10px;top:26px;animation:kl-float 7s ease-in-out infinite .8s;}
+.kl-hero-float-2 strong{color:var(--kl-teal);}
+@keyframes kl-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+
+/* ===== 通用 Section ===== */
+.kl-section{padding:clamp(44px,6vw,80px) clamp(16px,4vw,56px);}
+.kl-section-inner{max-width:1240px;margin:0 auto;}
+.kl-section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;
+  flex-wrap:wrap;margin-bottom:clamp(24px,3.4vw,40px);
+}
+.kl-section-head h2{
+  font-size:clamp(22px,2.9vw,32px);font-weight:800;letter-spacing:-.4px;line-height:1.25;
+}
+.kl-section-head h2 small{
+  display:block;font-size:12.5px;font-weight:600;letter-spacing:3px;
+  color:var(--kl-amber-deep);text-transform:uppercase;margin-bottom:7px;
+}
+.kl-section-desc{font-size:14.5px;color:var(--kl-muted);max-width:520px;text-align:justify;}
+.kl-link-more{
+  font-size:13.5px;font-weight:600;color:var(--kl-amber-deep);
+  display:inline-flex;align-items:center;gap:5px;white-space:nowrap;
+  border-bottom:1.5px dashed #f7b980;padding-bottom:2px;
+}
+.kl-link-more:hover{color:var(--kl-rose);border-color:var(--kl-rose);}
+
+/* ===== 关于/关键词解析 ===== */
+.kl-about{background:linear-gradient(180deg,#fffdf9, var(--kl-cream-2));}
+.kl-about-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(24px,4vw,56px);align-items:start;}
+.kl-about-aside{
+  background:#fff;border:1px solid var(--kl-line);border-radius:22px;
+  padding:26px;box-shadow:var(--kl-shadow);position:sticky;top:calc(var(--kl-sticky-h) + 18px);
+}
+.kl-about-aside h3{font-size:18px;margin-bottom:12px;}
+.kl-about-aside p{font-size:13.5px;color:var(--kl-muted);margin-bottom:16px;text-align:justify;}
+.kl-about-kw{
+  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;
+}
+.kl-about-kw span{
+  font-size:12px;padding:4px 11px;border-radius:999px;
+  background:var(--kl-amber-soft);color:var(--kl-amber-deep);border:1px solid #fcd9b6;
+}
+.kl-about-mini{display:flex;flex-direction:column;gap:10px;}
+.kl-about-mini li{
+  display:flex;align-items:center;gap:10px;font-size:13px;color:var(--kl-ink-2);
+  padding:9px 12px;border-radius:11px;background:var(--kl-cream);
+}
+.kl-about-mini li b{color:var(--kl-amber-deep);font-size:15px;}
+.kl-about-body h3{
+  font-size:clamp(18px,2.2vw,21px);margin:26px 0 10px;padding-left:13px;
+  border-left:4px solid var(--kl-amber);border-radius:2px;line-height:1.4;
+}
+.kl-about-body h3:first-child{margin-top:0;}
+.kl-about-body p{font-size:15px;color:var(--kl-ink-2);text-align:justify;margin-bottom:11px;}
+.kl-about-body strong{color:var(--kl-amber-deep);font-weight:700;}
+.kl-about-quote{
+  margin:22px 0;padding:18px 22px;border-radius:16px;
+  background:linear-gradient(120deg,#fff5ea,#f3fbf9);
+  border:1px dashed #f7c99e;font-size:15px;color:var(--kl-ink-2);
+  position:relative;
+}
+.kl-about-quote::before{
+  content:"“";position:absolute;left:8px;top:-8px;font-size:42px;color:#f7b980;
+  font-family:Georgia,serif;line-height:1;
+}
+
+/* ===== 视频卡片通用 ===== */
+.kl-video-grid{display:grid;gap:clamp(16px,2.4vw,26px);}
+.kl-video-grid.kl-cols-3{grid-template-columns:repeat(3,1fr);}
+.kl-video-grid.kl-cols-2{grid-template-columns:repeat(2,1fr);}
+.kl-video-card{
+  background:#fff;border:1px solid var(--kl-line);border-radius:var(--kl-radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .24s,box-shadow .24s,border-color .24s;
+}
+.kl-video-card:hover{transform:translateY(-6px);box-shadow:var(--kl-shadow-lg);border-color:#f5cba4;}
+.kl-video-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#f2e7d7;}
+.kl-video-thumb svg{width:100%;height:100%;display:block;transition:transform .5s;}
+.kl-video-card:hover .kl-video-thumb svg{transform:scale(1.05);}
+.kl-video-thumb::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(20,12,4,0) 46%,rgba(20,12,4,.55));
+}
+.kl-video-badge{
+  position:absolute;left:11px;top:11px;z-index:2;
+  background:rgba(255,255,255,.94);color:var(--kl-amber-deep);
+  font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:.3px;
+  box-shadow:0 3px 10px rgba(0,0,0,.12);
+}
+.kl-video-dur{
+  position:absolute;right:11px;bottom:11px;z-index:2;color:#fff7ed;
+  background:rgba(20,12,4,.68);font-size:11.5px;padding:2px 9px;border-radius:7px;
+  letter-spacing:.5px;font-variant-numeric:tabular-nums;
+}
+.kl-video-tri{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+  width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.22);
+  opacity:0;transition:opacity .24s,transform .24s;
+}
+.kl-video-card:hover .kl-video-tri{opacity:1;transform:translate(-50%,-50%) scale(1.06);}
+.kl-video-tri svg{width:19px;height:19px;margin-left:2px;}
+.kl-video-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1;}
+.kl-video-body h3{font-size:15.5px;font-weight:700;line-height:1.45;margin-bottom:7px;}
+.kl-video-card:hover .kl-video-body h3{color:var(--kl-amber-deep);}
+.kl-video-body p{
+  font-size:13px;color:var(--kl-muted);line-height:1.62;margin-bottom:11px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-align:justify;
+}
+.kl-video-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.kl-video-tags span{
+  font-size:11.5px;color:var(--kl-teal);background:#edf7f5;border:1px solid #cfe8e4;
+  padding:1px 9px;border-radius:999px;
+}
+.kl-video-meta{
+  display:flex;align-items:center;gap:8px;margin-top:auto;
+  padding-top:11px;border-top:1px dashed var(--kl-line);font-size:12px;color:var(--kl-muted);
+}
+.kl-avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;letter-spacing:0;
+}
+.kl-video-meta .kl-video-author{font-weight:600;color:var(--kl-ink-2);font-size:12.5px;}
+.kl-video-meta .kl-dot{width:3px;height:3px;border-radius:50%;background:#c8b8a2;}
+.kl-video-ops{margin-left:auto;display:flex;align-items:center;gap:4px;}
+.kl-op-btn{
+  display:inline-flex;align-items:center;gap:4px;padding:4px 7px;border-radius:8px;
+  font-size:12px;color:var(--kl-muted);transition:background .18s,color .18s;
+}
+.kl-op-btn svg{width:14px;height:14px;}
+.kl-op-btn:hover{background:var(--kl-amber-soft);color:var(--kl-amber-deep);}
+.kl-op-btn.kl-liked{color:var(--kl-rose);font-weight:700;}
+.kl-op-btn.kl-liked svg{fill:currentColor;}
+.kl-op-btn.kl-saved{color:var(--kl-teal);}
+.kl-op-btn.kl-saved svg{fill:currentColor;}
+
+/* 焦点区双栏 */
+.kl-focus-grid{display:grid;grid-template-columns:1.32fr 1fr;gap:clamp(18px,2.6vw,30px);align-items:start;}
+.kl-focus-side{display:grid;gap:14px;}
+.kl-video-card.kl-card-wide{grid-column:span 2;}
+.kl-focus-main .kl-video-thumb{aspect-ratio:16/9;}
+
+/* ===== 专题 ===== */
+.kl-topic-section{background:linear-gradient(160deg,#14201f,#1c2b29 55%,#213130);color:#e9f3f1;}
+.kl-topic-section .kl-section-head h2{color:#fff;}
+.kl-topic-section .kl-section-head h2 small{color:#5eead4;}
+.kl-topic-section .kl-section-desc{color:#a9c3bf;}
+.kl-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.kl-topic-card{
+  background:rgba(255,255,255,.045);border:1px solid rgba(94,234,212,.18);
+  border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:11px;
+  transition:background .22s,transform .22s,border-color .22s;
+}
+.kl-topic-card:hover{background:rgba(94,234,212,.09);transform:translateY(-5px);border-color:rgba(94,234,212,.44);}
+.kl-topic-card .kl-topic-no{
+  font-size:12px;letter-spacing:3px;color:#5eead4;font-weight:700;
+}
+.kl-topic-card h3{font-size:17px;color:#fff;line-height:1.4;}
+.kl-topic-card p{font-size:13px;color:#a9c3bf;line-height:1.65;text-align:justify;flex:1;}
+.kl-topic-status{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#99f6e4;
+  padding-top:11px;border-top:1px dashed rgba(153,246,228,.22);
+}
+.kl-topic-status i{width:6px;height:6px;border-radius:50%;background:#5eead4;box-shadow:0 0 0 3px rgba(94,234,212,.18);}
+.kl-topic-status.kl-status-plan{color:#fcd34d;}
+.kl-topic-status.kl-status-plan i{background:#fcd34d;box-shadow:0 0 0 3px rgba(252,211,77,.16);}
+
+/* ===== 创作者 ===== */
+.kl-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.kl-creator-card{
+  background:#fff;border:1px solid var(--kl-line);border-radius:18px;padding:20px 18px;
+  text-align:center;transition:transform .22s,box-shadow .22s;
+}
+.kl-creator-card:hover{transform:translateY(-5px);box-shadow:var(--kl-shadow);}
+.kl-creator-avatar{
+  width:62px;height:62px;border-radius:50%;margin:0 auto 12px;
+  display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;
+  box-shadow:0 8px 20px rgba(120,80,30,.18);
+}
+.kl-creator-card h3{font-size:15.5px;margin-bottom:3px;}
+.kl-creator-field{font-size:12px;color:var(--kl-amber-deep);font-weight:600;margin-bottom:8px;letter-spacing:.4px;}
+.kl-creator-card p{font-size:12.5px;color:var(--kl-muted);line-height:1.6;margin-bottom:12px;min-height:42px;text-align:justify;}
+.kl-creator-stats{
+  display:flex;justify-content:center;gap:14px;font-size:11.5px;color:var(--kl-muted);
+  padding-top:11px;border-top:1px dashed var(--kl-line);
+}
+.kl-creator-stats b{display:block;font-size:13.5px;color:var(--kl-ink);font-weight:700;}
+.kl-creator-btn{
+  margin-top:12px;width:100%;padding:7px;border-radius:10px;font-size:12.5px;
+  background:var(--kl-amber-soft);color:var(--kl-amber-deep);font-weight:600;
+  transition:background .18s,color .18s;
+}
+.kl-creator-btn:hover{background:var(--kl-amber);color:#fff;}
+
+/* ===== 作品墙 ===== */
+.kl-wall-section{background:var(--kl-cream-2);}
+.kl-wall-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:132px;gap:14px;
+}
+.kl-wall-item{
+  position:relative;border-radius:16px;overflow:hidden;cursor:pointer;
+  border:1px solid var(--kl-line);background:#fff;
+  transition:transform .24s,box-shadow .24s;
+}
+.kl-wall-item:hover{transform:translateY(-4px);box-shadow:var(--kl-shadow-lg);}
+.kl-wall-item svg{width:100%;height:100%;display:block;transition:transform .5s;}
+.kl-wall-item:hover svg{transform:scale(1.06);}
+.kl-wall-item.kl-w-lg{grid-column:span 2;grid-row:span 2;}
+.kl-wall-item.kl-w-md{grid-column:span 2;grid-row:span 1;}
+.kl-wall-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 13px 11px;
+  background:linear-gradient(180deg,transparent,rgba(20,12,4,.72));
+  color:#fff;font-size:12.5px;font-weight:600;line-height:1.4;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:8px;
+}
+.kl-wall-cap span{font-size:11px;opacity:.85;font-weight:500;white-space:nowrap;}
+
+/* ===== 故事随笔 ===== */
+.kl-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.kl-story-card{
+  background:#fff;border:1px solid var(--kl-line);border-radius:18px;padding:22px;
+  display:flex;flex-direction:column;gap:10px;position:relative;
+  transition:transform .22s,box-shadow .22s;
+}
+.kl-story-card:hover{transform:translateY(-4px);box-shadow:var(--kl-shadow);}
+.kl-story-card::before{
+  content:"";position:absolute;left:22px;top:0;width:38px;height:3px;border-radius:0 0 3px 3px;
+  background:var(--kl-amber);
+}
+.kl-story-card h3{font-size:16px;line-height:1.45;margin-top:4px;}
+.kl-story-card p{font-size:13.5px;color:var(--kl-ink-2);line-height:1.72;text-align:justify;flex:1;}
+.kl-story-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-size:12px;color:var(--kl-muted);padding-top:11px;border-top:1px dashed var(--kl-line);
+}
+.kl-story-foot b{color:var(--kl-amber-deep);font-weight:600;}
+
+/* ===== 评价 ===== */
+.kl-review-section{background:linear-gradient(180deg,#fffdf9,#fdf6ec);}
+.kl-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.kl-review-card{
+  background:#fff;border:1px solid var(--kl-line);border-radius:16px;padding:18px;
+  display:flex;flex-direction:column;gap:11px;transition:transform .22s,box-shadow .22s;
+}
+.kl-review-card:hover{transform:translateY(-3px);box-shadow:var(--kl-shadow);}
+.kl-review-top{display:flex;align-items:center;gap:10px;}
+.kl-review-top .kl-avatar{width:34px;height:34px;font-size:14px;}
+.kl-review-who strong{display:block;font-size:13.5px;}
+.kl-review-who span{font-size:11.5px;color:var(--kl-muted);}
+.kl-review-stars{margin-left:auto;font-size:12px;color:#f59e0b;letter-spacing:1px;flex:none;}
+.kl-review-card p{font-size:13px;color:var(--kl-ink-2);line-height:1.7;text-align:justify;flex:1;}
+.kl-review-card p::before{content:"“";color:#f7b980;font-weight:700;}
+.kl-review-card p::after{content:"”";color:#f7b980;font-weight:700;}
+
+/* ===== 灵感 / 工具 ===== */
+.kl-tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.kl-tool-card{
+  background:#fff;border:1px solid var(--kl-line);border-radius:16px;padding:20px;
+  transition:transform .22s,box-shadow .22s,border-color .22s;
+}
+.kl-tool-card:hover{transform:translateY(-4px);box-shadow:var(--kl-shadow);border-color:#f5cba4;}
+.kl-tool-icon{
+  width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:12px;
+  background:var(--kl-amber-soft);color:var(--kl-amber-deep);
+}
+.kl-tool-icon svg{width:20px;height:20px;}
+.kl-tool-card h3{font-size:15px;margin-bottom:6px;}
+.kl-tool-card p{font-size:13px;color:var(--kl-muted);line-height:1.65;text-align:justify;}
+.kl-tool-samples{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;}
+.kl-tool-samples span{
+  font-size:11.5px;padding:3px 9px;border-radius:8px;background:var(--kl-cream-2);
+  color:var(--kl-ink-2);border:1px solid var(--kl-line);
+}
+
+/* ===== 动态 ===== */
+.kl-news-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--kl-line);}
+.kl-news-item{
+  display:flex;align-items:flex-start;gap:16px;padding:16px 4px;
+  border-bottom:1px dashed var(--kl-line);transition:background .18s;
+}
+.kl-news-item:hover{background:#fffdf8;}
+.kl-news-date{
+  flex:none;width:74px;font-size:12px;color:var(--kl-muted);font-variant-numeric:tabular-nums;
+  padding-top:2px;
+}
+.kl-news-main strong{display:block;font-size:14.5px;margin-bottom:3px;}
+.kl-news-main p{font-size:12.5px;color:var(--kl-muted);line-height:1.6;}
+.kl-news-tag{
+  flex:none;font-size:11px;padding:2px 9px;border-radius:999px;align-self:center;
+  background:#edf7f5;color:var(--kl-teal);border:1px solid #cfe8e4;
+}
+.kl-news-tag.kl-tag-new{background:var(--kl-amber-soft);color:var(--kl-amber-deep);border-color:#fcd9b6;}
+
+/* ===== 榜单 ===== */
+.kl-rank-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.kl-rank-card{background:#fff;border:1px solid var(--kl-line);border-radius:16px;padding:18px;}
+.kl-rank-card h3{
+  font-size:14px;color:var(--kl-ink-2);margin-bottom:12px;display:flex;align-items:center;gap:8px;
+}
+.kl-rank-card h3 i{
+  width:6px;height:16px;border-radius:3px;background:linear-gradient(180deg,#f97316,#ea580c);display:inline-block;
+}
+.kl-rank-list{display:flex;flex-direction:column;gap:2px;}
+.kl-rank-list li{
+  display:flex;align-items:center;gap:10px;font-size:13px;padding:7px 0;
+  border-bottom:1px dashed #f0e7da;
+}
+.kl-rank-list li:last-child{border-bottom:none;}
+.kl-rank-num{
+  flex:none;width:19px;height:19px;border-radius:6px;display:grid;place-items:center;
+  font-size:11px;font-weight:700;background:var(--kl-cream-2);color:var(--kl-muted);
+}
+.kl-rank-list li:nth-child(1) .kl-rank-num{background:#ea580c;color:#fff;}
+.kl-rank-list li:nth-child(2) .kl-rank-num{background:#f59e0b;color:#fff;}
+.kl-rank-list li:nth-child(3) .kl-rank-num{background:#fbbf24;color:#fff;}
+.kl-rank-list li span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.kl-rank-list li b{font-size:11.5px;color:var(--kl-muted);font-weight:500;flex:none;}
+
+/* ===== FAQ ===== */
+.kl-faq{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:11px;}
+.kl-faq details{
+  background:#fff;border:1px solid var(--kl-line);border-radius:14px;overflow:hidden;
+  transition:border-color .2s,box-shadow .2s;
+}
+.kl-faq details[open]{border-color:#f5cba4;box-shadow:var(--kl-shadow);}
+.kl-faq summary{
+  list-style:none;cursor:pointer;padding:15px 20px;font-size:14.5px;font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.kl-faq summary::-webkit-details-marker{display:none;}
+.kl-faq summary::after{
+  content:"+";font-size:19px;color:var(--kl-amber);font-weight:400;line-height:1;flex:none;
+  transition:transform .2s;
+}
+.kl-faq details[open] summary::after{content:"−";transform:rotate(180deg);}
+.kl-faq details p{padding:0 20px 16px;font-size:13.5px;color:var(--kl-muted);line-height:1.75;text-align:justify;}
+
+/* ===== 联系 / 投稿 ===== */
+.kl-contact-section{
+  background:
+    radial-gradient(700px 320px at 90% 10%,rgba(249,115,22,.16),transparent 65%),
+    linear-gradient(140deg,#2b2118,#3a2c1f 60%,#4a3625);
+  color:#f7ede1;
+}
+.kl-contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,4vw,54px);align-items:center;}
+.kl-contact-grid h2{font-size:clamp(22px,2.9vw,31px);color:#fff;line-height:1.3;margin-bottom:12px;}
+.kl-contact-grid > div > p{font-size:14.5px;color:#d8c8b6;line-height:1.8;text-align:justify;margin-bottom:18px;}
+.kl-contact-actions{display:flex;flex-wrap:wrap;gap:12px;}
+.kl-contact-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(247,237,225,.16);
+  border-radius:18px;padding:22px;backdrop-filter:blur(6px);
+}
+.kl-contact-card h3{font-size:15px;color:#fff;margin-bottom:12px;}
+.kl-contact-card ul{display:flex;flex-direction:column;gap:9px;}
+.kl-contact-card li{display:flex;align-items:center;gap:9px;font-size:13px;color:#d8c8b6;}
+.kl-contact-card li b{color:#fbbf24;font-weight:600;flex:none;}
+.kl-contact-card li span{color:#f7ede1;}
+
+/* ===== 页脚 ===== */
+.kl-site-footer{background:#1e1810;color:#b9a892;padding:clamp(38px,5vw,58px) clamp(16px,4vw,56px) 26px;}
+.kl-footer-inner{max-width:1240px;margin:0 auto;}
+.kl-footer-top{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:clamp(20px,3vw,44px);
+  padding-bottom:30px;border-bottom:1px solid rgba(185,168,146,.18);
+}
+.kl-footer-brand .kl-brand-mark{width:40px;height:40px;margin-bottom:12px;}
+.kl-footer-brand strong{display:block;font-size:16px;color:#f7ede1;margin-bottom:8px;}
+.kl-footer-brand p{font-size:12.5px;line-height:1.8;color:#8f7f6c;max-width:330px;text-align:justify;}
+.kl-footer-col h3{font-size:13px;color:#f7ede1;margin-bottom:12px;letter-spacing:1px;}
+.kl-footer-col ul{display:flex;flex-direction:column;gap:8px;}
+.kl-footer-col a{font-size:12.5px;color:#8f7f6c;transition:color .18s;}
+.kl-footer-col a:hover{color:#fbbf24;}
+.kl-footer-bottom{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;
+  padding-top:20px;font-size:12px;color:#7a6b59;
+}
+.kl-footer-bottom .kl-footer-links{display:flex;flex-wrap:wrap;gap:16px;}
+.kl-footer-bottom a:hover{color:#fbbf24;}
+
+/* ===== 回到顶部 ===== */
+.kl-back-top{
+  position:fixed;right:20px;bottom:26px;z-index:150;
+  width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,#f97316,#ea580c);color:#fff;
+  display:grid;place-items:center;box-shadow:0 10px 26px rgba(234,88,12,.38);
+  opacity:0;pointer-events:none;transform:translateY(14px);
+  transition:opacity .26s,transform .26s;
+}
+.kl-back-top.kl-is-show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.kl-back-top:hover{transform:translateY(-3px);}
+.kl-back-top svg{width:20px;height:20px;}
+
+/* ===== Toast ===== */
+.kl-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:rgba(43,33,24,.94);color:#f7ede1;font-size:13.5px;
+  padding:11px 22px;border-radius:999px;box-shadow:0 14px 34px rgba(0,0,0,.3);
+  opacity:0;pointer-events:none;transition:opacity .26s,transform .26s;z-index:300;
+  max-width:86vw;text-align:center;
+}
+.kl-toast.kl-is-show{opacity:1;transform:translate(-50%,0);}
+
+/* ===== Modal ===== */
+.kl-modal{
+  position:fixed;inset:0;z-index:400;display:none;
+  align-items:center;justify-content:center;padding:20px;
+  background:rgba(26,18,10,.55);backdrop-filter:blur(4px);
+}
+.kl-modal.kl-is-open{display:flex;}
+.kl-modal-box{
+  background:#fff;border-radius:22px;width:100%;max-width:480px;
+  padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.34);
+  animation:kl-pop .26s ease;
+  max-height:88vh;overflow:auto;
+}
+@keyframes kl-pop{from{opacity:0;transform:translateY(16px) scale(.97);}to{opacity:1;transform:none;}}
+.kl-modal-box h3{font-size:18px;margin-bottom:6px;}
+.kl-modal-box > p{font-size:13.5px;color:var(--kl-muted);margin-bottom:16px;line-height:1.7;}
+.kl-modal-close{
+  position:absolute;right:16px;top:14px;font-size:22px;color:var(--kl-muted);line-height:1;
+}
+.kl-modal-form{display:flex;flex-direction:column;gap:11px;}
+.kl-modal-form label{font-size:12.5px;font-weight:600;color:var(--kl-ink-2);display:block;margin-bottom:4px;}
+.kl-modal-form input,.kl-modal-form textarea,.kl-modal-form select{
+  width:100%;border:1px solid var(--kl-line);border-radius:11px;padding:9px 12px;
+  font-size:13.5px;font-family:inherit;color:var(--kl-ink);outline:none;background:#fffdf9;
+  transition:border-color .18s,box-shadow .18s;
+}
+.kl-modal-form input:focus,.kl-modal-form textarea:focus,.kl-modal-form select:focus{
+  border-color:var(--kl-amber);box-shadow:0 0 0 3px rgba(249,115,22,.12);
+}
+.kl-modal-form textarea{resize:vertical;min-height:88px;}
+.kl-share-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px;}
+.kl-share-row button{
+  flex:1;min-width:96px;padding:11px;border-radius:12px;font-size:13px;font-weight:600;
+  background:var(--kl-cream-2);color:var(--kl-ink-2);transition:background .18s,color .18s;
+}
+.kl-share-row button:hover{background:var(--kl-amber);color:#fff;}
+
+/* ===== 响应式 ===== */
+@media (max-width:1080px){
+  .kl-hero-grid{grid-template-columns:1fr;}
+  .kl-hero-visual{max-width:640px;}
+  .kl-focus-grid{grid-template-columns:1fr;}
+  .kl-video-grid.kl-cols-3{grid-template-columns:repeat(2,1fr);}
+  .kl-creator-grid{grid-template-columns:repeat(3,1fr);}
+  .kl-topic-grid,.kl-story-grid,.kl-review-grid,.kl-tool-grid,.kl-rank-grid{grid-template-columns:repeat(2,1fr);}
+  .kl-about-grid{grid-template-columns:1fr;}
+  .kl-about-aside{position:static;}
+  .kl-wall-grid{grid-template-columns:repeat(3,1fr);}
+  .kl-contact-grid{grid-template-columns:1fr;}
+  .kl-footer-top{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  .kl-main-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:#fff;border-bottom:1px solid var(--kl-line);
+    padding:8px 0;box-shadow:var(--kl-shadow-lg);
+  }
+  .kl-main-nav.kl-is-open{display:flex;}
+  .kl-main-nav a{padding:12px clamp(16px,4vw,56px);}
+  .kl-main-nav a::after{display:none;}
+  .kl-nav-toggle{display:grid;}
+  .kl-search{display:none;}
+  .kl-site-header{position:relative;}
+  .kl-header-tools .kl-btn-primary{padding:8px 14px;font-size:13px;}
+  .kl-hero-stats{max-width:100%;}
+  .kl-video-grid.kl-cols-3,.kl-video-grid.kl-cols-2{grid-template-columns:1fr;}
+  .kl-video-card.kl-card-wide{grid-column:span 1;}
+  .kl-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .kl-topic-grid,.kl-story-grid,.kl-review-grid,.kl-tool-grid,.kl-rank-grid{grid-template-columns:1fr;}
+  .kl-wall-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:118px;}
+  .kl-wall-item.kl-w-lg{grid-column:span 2;grid-row:span 1;}
+  .kl-footer-top{grid-template-columns:1fr;}
+  .kl-hero-float{display:none;}
+  .kl-news-item{flex-wrap:wrap;gap:6px;}
+  .kl-news-date{width:auto;}
+  .kl-toast{bottom:96px;}
+}
+@media (max-width:420px){
+  .kl-creator-grid{grid-template-columns:1fr;}
+  .kl-hero-actions .kl-btn{width:100%;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶：公告条 + 页头 ============ -->
+<div class="kl-sticky-wrap" id="klTop">
+  <div class="kl-notice-bar" id="klNoticeBar">
+    <span class="kl-notice-tag">官方发布</span>
+    <div class="kl-notice-track">
+      <ul class="kl-notice-track" style="display:contents;">
+        <li><b>「回家的路」冬季主题企划</b>正式上线，首批 6 支原创短片已入库</li>
+        <li><b>新年归途影像征集</b>开启报名，上传作品即可参与口碑评选</li>
+        <li><b>创作者扶持计划第 4 期</b>入选名单公布，共 32 位创作者获得推荐</li>
+        <li><b>移动端「今日美好」频道</b>更新，新增回家路线攻略合集</li>
+      </ul>
+    </div>
+    <button class="kl-notice-close" type="button" aria-label="关闭公告" id="klNoticeClose">×</button>
+  </div>
+
+  <header class="kl-site-header">
+    <a class="kl-brand" href="#klTop" aria-label="看料今日美好生活回家的路 官方网站首页">
+      <span class="kl-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M20 34 L32 22 L44 34 L44 46 L38 46 L38 38 L26 38 L26 46 L20 46 Z" fill="#fff7ed"/></svg>
+      </span>
+      <span class="kl-brand-text">
+        <strong>看料·今日美好</strong>
+        <span>回家影像社区</span>
+      </span>
+    </a>
+    <nav class="kl-main-nav" id="klMainNav" aria-label="主导航">
+      <a href="#klHero">首页</a>
+      <a href="#klFocus">焦点影像</a>
+      <a href="#klTopics">专题企划</a>
+      <a href="#klCreators">创作者</a>
+      <a href="#klWall">作品墙</a>
+      <a href="#klNews">企业动态</a>
+      <a href="#klFaq">帮助</a>
+      <a href="#klContact">联系</a>
+    </nav>
+    <div class="kl-header-tools">
+      <div class="kl-search">
+        <input type="search" id="klSearchInput" placeholder="搜索影像、创作者、路线" aria-label="站内搜索">
+        <button type="button" id="klSearchBtn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.2-4.2"/></svg>
+        </button>
+      </div>
+      <button type="button" class="kl-btn kl-btn-primary" id="klSubmitBtn">我要投稿</button>
+      <button type="button" class="kl-nav-toggle" id="klNavToggle" aria-label="展开导航" aria-expanded="false"><span></span></button>
+    </div>
+    <div class="kl-search-feedback" id="klSearchFeedback"></div>
+  </header>
+</div>
+
+<main>
+
+<!-- ============ Hero ============ -->
+<section class="kl-hero" id="klHero">
+  <div class="kl-hero-grid">
+    <div>
+      <span class="kl-hero-eyebrow"><i></i>官方网站 · 持续运营 · 值得信赖的生活影像社区</span>
+      <h1>看料今日美好生活<em>回家的路</em></h1>
+      <p class="kl-hero-slogan">把每一段归途，都拍成值得回看的美好日常。</p>
+      <p class="kl-hero-intro">
+        看料今日美好生活回家的路官方网站是一家深耕生活影像垂直领域的视频内容平台。我们相信，美好并不总在远方，它常常藏在傍晚六点的公交站台、母亲端上桌的第一碗汤、以及那条走了很多年却依然会让你停下脚步的老街。作为行业领先的原创内容社区，我们为企业、创作者与普通记录者搭建高品质内容生态，用专业与匠心打磨每一帧画面，让真实、温暖、有力量的日常被更多人看见。平台持续运营至今，始终坚持用户至上与正版高清的内容标准，累计沉淀数万条生活影像作品，形成独特而稳定的品牌口碑。我们希望通过影像，让回家这件事从一次物理移动，变成一次可以被分享、被收藏、被反复咀嚼的情感旅程。
+      </p>
+      <div class="kl-hero-actions">
+        <a class="kl-btn kl-btn-primary" href="#klFocus">进入焦点影像
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="kl-btn kl-btn-ghost" href="#klAbout">了解品牌故事</a>
+        <button type="button" class="kl-btn kl-btn-ghost" id="klShareTopBtn">分享本页</button>
+      </div>
+      <div class="kl-hero-stats">
+        <div class="kl-stat"><strong data-count="28600">0</strong><span>原创影像作品</span></div>
+        <div class="kl-stat"><strong data-count="1240">0</strong><span>签约创作者</span></div>
+        <div class="kl-stat"><strong data-count="920">0</strong><span>回家主题短片</span></div>
+      </div>
+    </div>
+    <div class="kl-hero-visual">
+      <div class="kl-hero-frame">
+        <svg viewBox="0 0 800 450" role="img" aria-label="黄昏时分老巷里亮起暖灯的回家路主视觉">
+          <defs>
+            <linearGradient id="klSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2f4a6b"/><stop offset=".45" stop-color="#c2603a"/><stop offset=".75" stop-color="#f2a35c"/><stop offset="1" stop-color="#f8d9a8"/>
+            </linearGradient>
+            <linearGradient id="klRoad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#6b4c36"/><stop offset="1" stop-color="#3a2a1e"/>
+            </linearGradient>
+            <radialGradient id="klLamp" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#ffe6b0" stop-opacity=".95"/><stop offset="1" stop-color="#ffb457" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="800" height="450" fill="url(#klSky)"/>
+          <circle cx="600" cy="150" r="46" fill="#ffe6b0" opacity=".55"/>
+          <circle cx="600" cy="150" r="26" fill="#fff3d6"/>
+          <path d="M0 300 L120 240 L210 300 L300 232 L410 300 L520 250 L640 300 L720 262 L800 300 L800 450 L0 450 Z" fill="#2a1e16" opacity=".55"/>
+          <rect x="80" y="252" width="120" height="120" fill="#3d2a1e"/>
+          <rect x="100" y="272" width="26" height="30" fill="#ffd59a" opacity=".85"/>
+          <rect x="150" y="272" width="26" height="30" fill="#ffd59a" opacity=".55"/>
+          <rect x="560" y="236" width="140" height="136" fill="#35241a"/>
+          <rect x="582" y="262" width="30" height="34" fill="#ffd59a" opacity=".8"/>
+          <rect x="640" y="262" width="30" height="34" fill="#ffd59a" opacity=".45"/>
+          <path d="M290 450 L370 320 L440 320 L520 450 Z" fill="url(#klRoad)"/>
+          <path d="M400 450 L400 322" stroke="#f6d9a6" stroke-width="3" stroke-dasharray="14 16" opacity=".7"/>
+          <rect x="366" y="300" width="8" height="100" fill="#1e1610"/>
+          <circle cx="370" cy="298" r="12" fill="#ffd08a"/>
+          <circle cx="370" cy="298" r="54" fill="url(#klLamp)"/>
+          <g fill="#22180f" opacity=".8">
+            <circle cx="352" cy="372" r="9"/><rect x="346" y="380" width="12" height="30" rx="5"/>
+            <circle cx="422" cy="360" r="8"/><rect x="416" y="367" width="12" height="28" rx="5"/>
+          </g>
+        </svg>
+        <span class="kl-hero-frame-tag"><i></i>回家 · 黄昏档案</span>
+        <span class="kl-hero-play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg>
+        </span>
+      </div>
+      <div class="kl-hero-float kl-hero-float-1">
+        <strong>今日新增 36 条</strong>
+        <span>来自 21 座城市的归途记录</span>
+      </div>
+      <div class="kl-hero-float kl-hero-float-2">
+        <strong>口碑好评 98.6%</strong>
+        <span>原创高清 · 社区共评</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关于 / 关键词深度解析 ============ -->
+<section class="kl-section kl-about" id="klAbout">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>About The Brand</small>关于「看料今日美好生活回家的路」</h2>
+      <p class="kl-section-desc">一个围绕生活影像与归途叙事持续运营的原创内容平台，我们用垂直领域的专业视角，把日常拍成精品内容。</p>
+    </div>
+    <div class="kl-about-grid">
+      <aside class="kl-about-aside">
+        <h3>关键词图谱</h3>
+        <p>「看料」「今日」「美好生活」「回家的路」四个词共同构成了本平台的品牌基因：看是动作，料是内容，今日是时间，美好生活是态度，回家的路是永恒的情感坐标。</p>
+        <div class="kl-about-kw">
+          <span>生活影像</span><span>归途叙事</span><span>城市探索</span>
+          <span>家庭陪伴</span><span>日常记录</span><span>原创高清</span>
+          <span>内容生态</span><span>创作者社区</span>
+        </div>
+        <ul class="kl-about-mini">
+          <li><b>01</b>正版高清 · 内容品质可控</li>
+          <li><b>02</b>持续运营 · 每日内容更新</li>
+          <li><b>03</b>用户至上 · 社区共评共建</li>
+          <li><b>04</b>匠心打磨 · 每帧都有出处</li>
+        </ul>
+      </aside>
+      <div class="kl-about-body">
+        <h3>我们为什么聚焦「回家的路」</h3>
+        <p>
+          在过去几年里，看料团队做过一次规模不小的内容调研，采访了超过两千位普通用户。当被问到“你手机里最舍不得删的那段视频是什么”，出现频率最高的答案并不是旅行、不是演唱会，而是一些极其私人的画面：冬夜里家门口那盏没关的灯，父亲在厨房里切菜的背影，孩子第一次独自放学走回来的那条巷子。这些画面共同指向一个朴素的词——<strong>回家的路</strong>。于是我们决定，把这个词做成平台长期的内容主线，也做成品牌与用户之间最重要的情感连接点。
+        </p>
+        <p>
+          作为一家以生活影像为核心的<strong>视频品牌</strong>，我们没有把“回家的路”窄化为单纯的春运纪录片。它既可以是跨越千里的长途迁徙，也可以是下班后拐进菜市场的那三百米；既可以是异乡出租屋里的一碗热汤，也可以是老宅院子里重新被踩出脚印的青石板。我们相信，真正的美好生活不是被规划出来的样板间，而是由无数个具体的、可被记录的时刻拼接而成。平台所做的，就是提供一套稳定的内容生态，让这些时刻有地方被安放、被看见、被讨论。
+        </p>
+        <div class="kl-about-quote">
+          每一段回家的路都值得被认真拍下，因为它们最终会连成一个人完整的一生。
+        </div>
+        <h3>内容生态与垂直领域深耕</h3>
+        <p>
+          在内容结构上，平台围绕「日常记录」「城市探索」「在地文化」「人物访谈」「生活攻略」五个方向持续产出。我们与超过一千两百位<strong>创作者</strong>建立了长期合作关系，其中既有专业的纪录片团队，也有只用一部手机记录早餐摊的普通用户。为了让内容品质保持在行业领先水平，平台建立了三级内容审核与推荐机制：由编辑团队负责基础事实与版权核验，由社区评审团负责口碑评分，最后由算法结合用户偏好做分发。这套机制让我们在保证<strong>正版高清</strong>的同时，也保住了内容里最珍贵的那点真实感。
+        </p>
+        <p>
+          我们同样重视企业与品牌侧的表达。越来越多的企业希望用影像讲述自己的品牌故事，但往往困在“太像广告”与“太像自嗨”之间。看料的解决方案是把企业放进具体的生活场景里：一家做了三十年的面馆，重点不是面有多筋道，而是凌晨四点老板骑电动车去市场的那条路；一个返乡创业的年轻人，重点不是销售额增长曲线，而是他重新走回家乡小学门口时的那次停顿。当品牌故事与回家叙事重叠，内容自然就有了温度和说服力。
+        </p>
+        <h3>社区、陪伴与持续的成长</h3>
+        <p>
+          看料不是单向播出的平台，而是一个有呼吸的<strong>社区</strong>。我们设置了作品墙、口碑榜单、新人榜与话题投票等轻量互动模块，让用户不只是观看者，也是内容生态的共建者。每周三的“今日美好”固定更新、每月一次的「回家的路」主题挑战、每季度一次的创作者开放日，构成了平台稳定的运营节奏。这种节奏感本身就是一种<strong>陪伴</strong>——它告诉用户，无论你今天过得怎么样，这里总有一个位置，放着一些和你相似的人拍下的相似瞬间。
+        </p>
+        <p>
+          未来，看料会继续在生活影像这个垂直领域做深做透，拓展更多城市在地内容的合作，完善创作者扶持与版权保护体系，并尝试把优秀的回家主题短片带到线下放映场景。我们愿意用长期主义的态度，陪一代记录者慢慢长大，也陪一代观众慢慢变老。这是我们对<strong>官方网站</strong>这四个字最朴素的承诺：不追热点，不赚快钱，只把每一段值得留下的路，认认真真地拍好、存好、传下去。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 焦点影像 ============ -->
+<section class="kl-section" id="klFocus">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Focus Films</small>焦点影像 · 本周主推</h2>
+      <p class="kl-section-desc">编辑团队从近千条更新中挑选出的六支作品，覆盖长途归途、城市夜行与家常厨房三种视角。</p>
+      <a class="kl-link-more" href="#klWall">查看全部作品 →</a>
+    </div>
+
+    <div class="kl-focus-grid">
+      <div class="kl-focus-main">
+        <article class="kl-video-card">
+          <div class="kl-video-thumb">
+            <svg viewBox="0 0 640 360" role="img" aria-label="绿皮火车穿过冬日田野的回家路上的窗景短片封面">
+              <defs>
+                <linearGradient id="klF1a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb4c9"/><stop offset=".55" stop-color="#d8c2a0"/><stop offset="1" stop-color="#8a6a45"/></linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#klF1a)"/>
+              <path d="M0 232 Q120 200 220 226 T420 218 T640 236 L640 360 L0 360 Z" fill="#6d5335"/>
+              <path d="M0 258 Q160 232 300 254 T640 250 L640 360 L0 360 Z" fill="#4f3b25"/>
+              <g stroke="#3c2c1b" stroke-width="3" opacity=".55">
+                <path d="M60 250 L40 360"/><path d="M150 244 L138 360"/><path d="M470 252 L486 360"/><path d="M560 254 L580 360"/>
+              </g>
+              <rect x="0" y="292" width="640" height="14" fill="#2c2115" opacity=".5"/>
+              <rect x="96" y="86" width="200" height="120" rx="10" fill="#f4ece0" opacity=".92"/>
+              <rect x="96" y="86" width="200" height="120" rx="10" fill="none" stroke="#7a5c3c" stroke-width="6"/>
+              <path d="M196 86 L196 206" stroke="#7a5c3c" stroke-width="5"/>
+              <path d="M96 146 L296 146" stroke="#7a5c3c" stroke-width="5"/>
+              <g fill="#5d7f93" opacity=".55">
+                <circle cx="150" cy="120" r="17"/><circle cx="245" cy="122" r="14"/>
+                <circle cx="150" cy="180" r="14"/><circle cx="248" cy="178" r="17"/>
+              </g>
+              <rect x="330" y="150" width="230" height="46" rx="23" fill="#c9442f" opacity=".85"/>
+              <text x="445" y="180" font-size="21" text-anchor="middle" fill="#fff3e6" font-family="PingFang SC,sans-serif" letter-spacing="4">归途</text>
+            </svg>
+            <span class="kl-video-badge">编辑推荐</span>
+            <span class="kl-video-dur">18:42</span>
+            <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="kl-video-body">
+            <h3>从南到北 1600 公里：我坐了 21 小时绿皮车回家</h3>
+            <p>镜头从车厢窗框开始，穿过冬日田野、隧道与一个个陌生小站。作者没有旁白，只用同期声记录同车人的方言、泡面声和深夜的鼾声。这是「回家的路」主题企划的开篇之作，也是一支献给所有长途归人的安静作品。</p>
+            <div class="kl-video-tags"><span>长途归途</span><span>日常记录</span><span>同期声</span></div>
+            <div class="kl-video-meta">
+              <span class="kl-avatar" style="background:#0f766e;">林</span>
+              <span class="kl-video-author">林深见鹿</span>
+              <span class="kl-dot"></span>
+              <span class="kl-like-count">2.4 万</span>
+              <span>喜欢</span>
+              <div class="kl-video-ops">
+                <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+                  <span>点赞</span>
+                </button>
+                <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                  <span>收藏</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="kl-focus-side">
+        <article class="kl-video-card">
+          <div class="kl-video-thumb">
+            <svg viewBox="0 0 640 360" role="img" aria-label="雨夜城市公交站台等人回家的纪录片封面">
+              <rect width="640" height="360" fill="#16202b"/>
+              <g stroke="#3f5a6f" stroke-width="1.6" opacity=".65">
+                <path d="M40 0 L120 360"/><path d="M200 0 L240 360"/><path d="M420 0 L400 360"/><path d="M580 0 L540 360"/>
+              </g>
+              <rect x="0" y="252" width="640" height="108" fill="#0e161d"/>
+              <rect x="70" y="196" width="180" height="14" rx="7" fill="#2b3d4c"/>
+              <rect x="84" y="210" width="8" height="42" fill="#2b3d4c"/>
+              <rect x="228" y="210" width="8" height="42" fill="#2b3d4c"/>
+              <rect x="412" y="176" width="140" height="76" rx="8" fill="#20303f"/>
+              <rect x="424" y="188" width="46" height="34" fill="#f4c37a" opacity=".9"/>
+              <rect x="484" y="188" width="46" height="34" fill="#f4c37a" opacity=".45"/>
+              <circle cx="300" cy="140" r="46" fill="#f4c37a" opacity=".16"/>
+              <circle cx="300" cy="140" r="17" fill="#ffe1a8"/>
+              <g stroke="#8fb0c7" stroke-width="2" opacity=".6">
+                <path d="M150 40 L128 120"/><path d="M260 20 L246 104"/><path d="M380 46 L392 122"/><path d="M500 26 L512 108"/>
+              </g>
+              <path d="M0 300 L640 292" stroke="#33485a" stroke-width="2" stroke-dasharray="18 14"/>
+            </svg>
+            <span class="kl-video-badge">夜行城市</span>
+            <span class="kl-video-dur">09:26</span>
+            <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="kl-video-body">
+            <h3>末班车之后：在公交站等一个还没下班的人</h3>
+            <p>一支安静的夜行记录，镜头在雨里放了四十分钟，只为等一盏车灯拐过街角。</p>
+            <div class="kl-video-tags"><span>城市探索</span><span>夜行</span></div>
+            <div class="kl-video-meta">
+              <span class="kl-avatar" style="background:#1d4ed8;">陈</span>
+              <span class="kl-video-author">陈小满</span>
+              <span class="kl-dot"></span>
+              <span class="kl-like-count">1.1 万</span>
+              <span>喜欢</span>
+              <div class="kl-video-ops">
+                <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span>点赞</span></button>
+                <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="kl-video-card">
+          <div class="kl-video-thumb">
+            <svg viewBox="0 0 640 360" role="img" aria-label="厨房灶台上热气腾腾的家常汤菜烹饪短片封面">
+              <rect width="640" height="360" fill="#f3dcc0"/>
+              <rect x="0" y="212" width="640" height="148" fill="#c69162"/>
+              <rect x="0" y="212" width="640" height="10" fill="#a87548"/>
+              <ellipse cx="320" cy="182" rx="132" ry="34" fill="#e9ebec"/>
+              <ellipse cx="320" cy="176" rx="118" ry="26" fill="#fdfaf3"/>
+              <ellipse cx="320" cy="172" rx="98" ry="19" fill="#e8a83f"/>
+              <circle cx="292" cy="170" r="12" fill="#f6e0b5"/>
+              <circle cx="330" cy="168" r="10" fill="#f6e0b5"/>
+              <circle cx="352" cy="174" r="8" fill="#f6e0b5"/>
+              <path d="M300 140 q10 -22 -4 -40 q18 6 12 30" stroke="#d9d2c6" stroke-width="5" fill="none" opacity=".75"/>
+              <path d="M340 132 q12 -20 -2 -38 q20 8 12 28" stroke="#d9d2c6" stroke-width="5" fill="none" opacity=".55"/>
+              <rect x="464" y="222" width="94" height="12" rx="6" fill="#8a5b34"/>
+              <rect x="482" y="196" width="52" height="26" rx="6" fill="#5f7f4e"/>
+              <circle cx="120" cy="250" r="26" fill="#e2752f"/>
+              <circle cx="156" cy="262" r="18" fill="#c9542b"/>
+              <rect x="96" y="286" width="86" height="9" rx="4" fill="#8a5b34"/>
+            </svg>
+            <span class="kl-video-badge">家常食谱</span>
+            <span class="kl-video-dur">06:18</span>
+            <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="kl-video-body">
+            <h3>妈妈的三菜一汤：我照着电话里的描述复刻了一遍</h3>
+            <p>没有精确克数，只有“差不多”“看着放”，这大概就是家常菜最真实的样子。</p>
+            <div class="kl-video-tags"><span>日常记录</span><span>家常烹饪</span></div>
+            <div class="kl-video-meta">
+              <span class="kl-avatar" style="background:#c2410c;">阿</span>
+              <span class="kl-video-author">阿原的厨房</span>
+              <span class="kl-dot"></span>
+              <span class="kl-like-count">8623</span>
+              <span>喜欢</span>
+              <div class="kl-video-ops">
+                <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span>点赞</span></button>
+                <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="kl-video-grid kl-cols-3" style="margin-top:clamp(18px,2.6vw,26px);">
+      <article class="kl-video-card">
+        <div class="kl-video-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="清晨菜市场里挑菜议价的市井短片封面">
+            <rect width="640" height="360" fill="#cfe0d2"/>
+            <rect x="0" y="150" width="640" height="210" fill="#9db79a"/>
+            <g fill="#7f9c7c"><rect x="0" y="150" width="640" height="16"/></g>
+            <rect x="70" y="196" width="150" height="70" rx="6" fill="#8b6a45"/>
+            <rect x="256" y="188" width="150" height="78" rx="6" fill="#8b6a45"/>
+            <rect x="442" y="200" width="130" height="66" rx="6" fill="#8b6a45"/>
+            <g fill="#4e7b45"><circle cx="102" cy="184" r="17"/><circle cx="130" cy="180" r="20"/><circle cx="162" cy="186" r="15"/></g>
+            <g fill="#d4602f"><circle cx="282" cy="176" r="14"/><circle cx="308" cy="182" r="12"/><circle cx="336" cy="176" r="15"/></g>
+            <g fill="#e8b53f"><circle cx="466" cy="186" r="13"/><circle cx="494" cy="190" r="11"/><circle cx="522" cy="184" r="14"/></g>
+            <rect x="0" y="300" width="640" height="60" fill="#6f8a6c"/>
+            <g fill="#43553f"><circle cx="180" cy="266" r="11"/><rect x="172" y="276" width="16" height="30" rx="7"/></g>
+            <g fill="#43553f"><circle cx="430" cy="262" r="10"/><rect x="423" y="272" width="15" height="28" rx="6"/></g>
+          </svg>
+          <span class="kl-video-badge">在地生活</span>
+          <span class="kl-video-dur">12:07</span>
+          <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="kl-video-body">
+          <h3>六点半的菜市场，是一个城市最早开口说话的地方</h3>
+          <p>跟着摊主老周走完他的一天，从进货到收摊，听见一座城最鲜活的口音。</p>
+          <div class="kl-video-tags"><span>在地文化</span><span>市井观察</span></div>
+          <div class="kl-video-meta">
+            <span class="kl-avatar" style="background:#7c3aed;">周</span>
+            <span class="kl-video-author">周记影像</span>
+            <span class="kl-dot"></span>
+            <span class="kl-like-count">6741</span>
+            <span>喜欢</span>
+            <div class="kl-video-ops">
+              <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="kl-video-card">
+        <div class="kl-video-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="父亲修理旧自行车的人物访谈短片封面">
+            <rect width="640" height="360" fill="#e3d7c3"/>
+            <rect x="0" y="240" width="640" height="120" fill="#b9a68c"/>
+            <circle cx="200" cy="252" r="52" fill="none" stroke="#5c4a35" stroke-width="8"/>
+            <circle cx="200" cy="252" r="10" fill="#5c4a35"/>
+            <circle cx="400" cy="252" r="52" fill="none" stroke="#5c4a35" stroke-width="8"/>
+            <circle cx="400" cy="252" r="10" fill="#5c4a35"/>
+            <path d="M200 252 L286 178 L360 252 M286 178 L400 252 M286 178 L262 150" stroke="#5c4a35" stroke-width="7" fill="none"/>
+            <path d="M250 150 L276 150" stroke="#5c4a35" stroke-width="8"/>
+            <rect x="470" y="150" width="118" height="96" rx="8" fill="#c9b79c"/>
+            <rect x="470" y="150" width="118" height="96" rx="8" fill="none" stroke="#8a755a" stroke-width="5"/>
+            <g fill="#8a755a"><rect x="484" y="176" width="34" height="8"/><rect x="484" y="196" width="52" height="8"/><rect x="484" y="216" width="26" height="8"/></g>
+            <circle cx="92" cy="120" r="40" fill="#f0b452" opacity=".55"/>
+          </svg>
+          <span class="kl-video-badge">人物访谈</span>
+          <span class="kl-video-dur">15:33</span>
+          <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="kl-video-body">
+          <h3>我爸修了四十年自行车，也修好了我回家的路</h3>
+          <p>一次关于父子、手艺与倔强的长谈。他说车链断了能接，路走岔了也能绕回来。</p>
+          <div class="kl-video-tags"><span>人物访谈</span><span>家庭陪伴</span></div>
+          <div class="kl-video-meta">
+            <span class="kl-avatar" style="background:#b45309;">许</span>
+            <span class="kl-video-author">许野的镜头</span>
+            <span class="kl-dot"></span>
+            <span class="kl-like-count">1.8 万</span>
+            <span>喜欢</span>
+            <div class="kl-video-ops">
+              <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="kl-video-card">
+        <div class="kl-video-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="山间公路自驾归乡的旅行见闻短片封面">
+            <defs><linearGradient id="klF4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#79a8c9"/><stop offset="1" stop-color="#d9e6ea"/></linearGradient></defs>
+            <rect width="640" height="360" fill="url(#klF4)"/>
+            <path d="M0 208 L120 132 L228 200 L330 118 L452 208 L560 150 L640 212 L640 360 L0 360 Z" fill="#5c7f66"/>
+            <path d="M0 254 L150 196 L280 252 L400 190 L540 254 L640 214 L640 360 L0 360 Z" fill="#3f6350"/>
+            <path d="M0 322 Q160 296 300 320 T640 310 L640 360 L0 360 Z" fill="#8c9c85"/>
+            <path d="M260 360 Q320 288 400 260 Q470 236 520 218" stroke="#d7d2c4" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <path d="M260 360 Q320 288 400 260 Q470 236 520 218" stroke="#f3efe6" stroke-width="3" fill="none" stroke-dasharray="14 14"/>
+            <g fill="#f6f2e8"><rect x="376" y="248" width="14" height="20" rx="3"/></g>
+            <g fill="#2f4a3c"><circle cx="120" cy="272" r="16"/><rect x="114" y="282" width="12" height="20" rx="5"/></g>
+          </svg>
+          <span class="kl-video-badge">旅行见闻</span>
+          <span class="kl-video-dur">10:52</span>
+          <span class="kl-video-tri" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#ea580c"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="kl-video-body">
+          <h3>开了 840 公里山路，只为赶上家里那顿立冬的饺子</h3>
+          <p>从海拔两千米的垭口一路下坡，导航终点是“家”，沿途都是久违的风景。</p>
+          <div class="kl-video-tags"><span>旅行见闻</span><span>自驾归途</span></div>
+          <div class="kl-video-meta">
+            <span class="kl-avatar" style="background:#0369a1;">野</span>
+            <span class="kl-video-author">野路子电台</span>
+            <span class="kl-dot"></span>
+            <span class="kl-like-count">5320</span>
+            <span>喜欢</span>
+            <div class="kl-video-ops">
+              <button type="button" class="kl-op-btn kl-like-btn" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span>点赞</span></button>
+              <button type="button" class="kl-op-btn kl-save-btn" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v16l-6-4-6 4z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="kl-section kl-topic-section" id="klTopics">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Special Projects</small>专题企划 · 长期内容线</h2>
+      <p class="kl-section-desc">我们不做一次性热点，而是把有价值的主题做成可以持续更新、持续参与的系列企划。</p>
+    </div>
+    <div class="kl-topic-grid">
+      <article class="kl-topic-card">
+        <span class="kl-topic-no">01 / 冬季主推</span>
+        <h3>「回家的路」冬季影像企划</h3>
+        <p>面向所有记录者征集归途故事，覆盖长途迁徙、城市通勤与短途返乡三种尺度。入选作品将获得平台首页推荐、官方专题收录与创作者扶持基金，并参与年度口碑评选。</p>
+        <span class="kl-topic-status"><i></i>进行中 · 已收录 286 支作品</span>
+      </article>
+      <article class="kl-topic-card">
+        <span class="kl-topic-no">02 / 城市联合</span>
+        <h3>二十座城的黄昏六点</h3>
+        <p>与二十个城市的本地创作者联合发起，在同一时刻记录各自城市的傍晚。同一时间、不同地点的平行剪辑，呈现中国式生活最真实的节奏感与在地文化差异。</p>
+        <span class="kl-topic-status"><i></i>更新至 第 3 期 · 12 城已上线</span>
+      </article>
+      <article class="kl-topic-card">
+        <span class="kl-topic-no">03 / 创作者成长</span>
+        <h3>新人第一支短片扶持计划</h3>
+        <p>为没有拍摄经验的普通用户提供脚本指导、剪辑模板与选题建议，帮助零基础记录者完成自己的第一支作品。每期评选优秀作品并给予流量与设备支持，鼓励更多人开始记录。</p>
+        <span class="kl-topic-status kl-status-plan"><i></i>第 5 期报名中 · 截止 12 月 8 日</span>
+      </article>
+      <article class="kl-topic-card">
+        <span class="kl-topic-no">04 / 深度访谈</span>
+        <h3>在路上的人：职业与归途</h3>
+        <p>把镜头对准货车司机、外卖骑手、异地医护人员与跨城通勤者，讨论“回家”对不同职业意味着什么。以长访谈形式呈现，每集 25 分钟以上，注重真实表达与细节。</p>
+        <span class="kl-topic-status"><i></i>已上线 6 集 · 每月更新</span>
+      </article>
+      <article class="kl-topic-card">
+        <span class="kl-topic-no">05 / 品牌共创</span>
+        <h3>企业品牌故事影像档案</h3>
+        <p>为希望用影像表达品牌温度的企业提供共创空间，围绕真实场景拍摄品牌故事，避免空洞口号。平台负责内容策划与品质把控，企业保留完整版权与二次使用权利。</p>
+        <span class="kl-topic-status"><i></i>长期开放 · 合作品牌 18 家</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵 ============ -->
+<section class="kl-section" id="klCreators">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Creators</small>创作者矩阵</h2>
+      <p class="kl-section-desc">他们用不同的镜头语言，共同讲述同一件事：生活值得被认真记录。</p>
+      <a class="kl-link-more" href="#klContact">申请成为创作者 →</a>
+    </div>
+    <div class="kl-creator-grid">
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">林</div>
+        <h3>林深见鹿</h3>
+        <span class="kl-creator-field">长途纪录 / 同期声</span>
+        <p>纪录片导演出身，偏爱长途交通与陌生人访谈，坚持不使用配乐。</p>
+        <div class="kl-creator-stats">
+          <span><b>86</b>作品</span><span><b>12.4 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="林深见鹿">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#c2410c,#f59e0b);">阿</div>
+        <h3>阿原的厨房</h3>
+        <span class="kl-creator-field">家常烹饪 / 情感食谱</span>
+        <p>把每道菜背后的家庭记忆讲清楚，是她视频里最动人的部分。</p>
+        <div class="kl-creator-stats">
+          <span><b>142</b>作品</span><span><b>21.8 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="阿原的厨房">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#1d4ed8,#38bdf8);">陈</div>
+        <h3>陈小满</h3>
+        <span class="kl-creator-field">城市探索 / 夜行影像</span>
+        <p>长期拍摄夜间城市与公共交通，作品常被形容为“安静的观察者”。</p>
+        <div class="kl-creator-stats">
+          <span><b>64</b>作品</span><span><b>9.6 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="陈小满">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#b45309,#fbbf24);">许</div>
+        <h3>许野的镜头</h3>
+        <span class="kl-creator-field">人物访谈 / 家庭叙事</span>
+        <p>专注普通人长访谈，擅长在沉默里捕捉最有力量的表达。</p>
+        <div class="kl-creator-stats">
+          <span><b>48</b>作品</span><span><b>15.2 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="许野的镜头">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#7c3aed,#c084fc);">周</div>
+        <h3>周记影像</h3>
+        <span class="kl-creator-field">在地文化 / 市井观察</span>
+        <p>走遍本地菜市场与老街巷，用镜头保存正在消失的生活细节。</p>
+        <div class="kl-creator-stats">
+          <span><b>97</b>作品</span><span><b>11.1 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="周记影像">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#0f766e,#4ade80);">野</div>
+        <h3>野路子电台</h3>
+        <span class="kl-creator-field">旅行见闻 / 自驾</span>
+        <p>边开车边录音的旅行记录者，把路上的对话剪成短小的声音散文。</p>
+        <div class="kl-creator-stats">
+          <span><b>53</b>作品</span><span><b>7.8 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="野路子电台">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#be123c,#fb7185);">小</div>
+        <h3>小巷放映员</h3>
+        <span class="kl-creator-field">治愈影像 / 慢节奏</span>
+        <p>拍猫、拍雨、拍发呆，作品节奏极慢，却常被用户反复回看。</p>
+        <div class="kl-creator-stats">
+          <span><b>120</b>作品</span><span><b>18.3 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="小巷放映员">查看档案</button>
+      </article>
+      <article class="kl-creator-card">
+        <div class="kl-creator-avatar" style="background:linear-gradient(135deg,#334155,#94a3b8);">北</div>
+        <h3>北海归期</h3>
+        <span class="kl-creator-field">雪国记录 / 冬季主题</span>
+        <p>常年在北方拍摄冬季归途，镜头里总有雪、路灯和热气腾腾的窗。</p>
+        <div class="kl-creator-stats">
+          <span><b>39</b>作品</span><span><b>6.4 万</b>关注</span>
+        </div>
+        <button type="button" class="kl-creator-btn" data-creator="北海归期">查看档案</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 作品墙 ============ -->
+<section class="kl-section kl-wall-section" id="klWall">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Image Wall</small>作品墙 · 今日美好精选</h2>
+      <p class="kl-section-desc">来自社区创作者的真实影像，尺寸不同，温度相同。每一张都可以点开看完整故事。</p>
+    </div>
+    <div class="kl-wall-grid" id="klWallGrid">
+      <figure class="kl-wall-item kl-w-lg" data-title="下雪的站台与归乡人">
+        <svg viewBox="0 0 640 400" role="img" aria-label="下雪的站台上排队等候归乡列车的人群">
+          <rect width="640" height="400" fill="#dbe6ee"/>
+          <rect x="0" y="250" width="640" height="150" fill="#c3d2dc"/>
+          <rect x="40" y="150" width="250" height="110" rx="8" fill="#8fa5b5"/>
+          <rect x="60" y="170" width="60" height="42" fill="#f2e6cb"/>
+          <rect x="140" y="170" width="60" height="42" fill="#f2e6cb" opacity=".6"/>
+          <rect x="330" y="130" width="270" height="130" rx="8" fill="#7e96a8"/>
+          <g fill="#f4f9fc" opacity=".9">
+            <circle cx="90" cy="70" r="4"/><circle cx="150" cy="40" r="3"/><circle cx="230" cy="86" r="5"/>
+            <circle cx="320" cy="52" r="3.5"/><circle cx="420" cy="80" r="4"/><circle cx="510" cy="46" r="3"/>
+            <circle cx="580" cy="96" r="4.5"/><circle cx="270" cy="120" r="3"/><circle cx="470" cy="120" r="4"/>
+          </g>
+          <g fill="#44586a">
+            <circle cx="180" cy="272" r="13"/><rect x="170" y="286" width="20" height="46" rx="9"/>
+            <circle cx="240" cy="280" r="12"/><rect x="231" y="293" width="18" height="42" rx="8"/>
+            <circle cx="380" cy="276" r="13"/><rect x="370" y="290" width="20" height="44" rx="9"/>
+            <circle cx="452" cy="284" r="11"/><rect x="444" y="296" width="17" height="38" rx="8"/>
+          </g>
+          <rect x="300" y="252" width="180" height="8" rx="4" fill="#f2e6cb" opacity=".7"/>
+        </svg>
+        <figcaption class="kl-wall-cap">下雪的站台与归乡人 <span>北海归期</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item kl-w-md" data-title="老楼梯口的暖光">
+        <svg viewBox="0 0 640 220" role="img" aria-label="老楼梯口亮着一盏暖光灯泡的楼道场景">
+          <rect width="640" height="220" fill="#b8a48c"/>
+          <rect x="0" y="150" width="640" height="70" fill="#8d7a62"/>
+          <rect x="230" y="20" width="140" height="120" fill="#6f5b43"/>
+          <rect x="250" y="40" width="100" height="80" fill="#e8c98a"/>
+          <circle cx="300" cy="60" r="20" fill="#ffe6b0"/>
+          <path d="M280 150 L280 120 L320 120 L320 150 Z" fill="#c9b08a"/>
+          <path d="M340 150 L340 110 L380 110 L380 150 Z" fill="#c9b08a"/>
+          <path d="M400 150 L400 100 L440 100 L440 150 Z" fill="#c9b08a"/>
+        </svg>
+        <figcaption class="kl-wall-cap">老楼梯口的暖光 <span>小巷放映员</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item" data-title="雨后的自行车辙">
+        <svg viewBox="0 0 320 220" role="img" aria-label="雨后路面上的自行车辙与积水倒影">
+          <rect width="320" height="220" fill="#6b7a80"/>
+          <path d="M0 180 Q80 120 160 176 T320 168 L320 220 L0 220 Z" fill="#4d5a60"/>
+          <path d="M40 210 Q120 150 200 190 T320 200" stroke="#8c9ca3" stroke-width="5" fill="none"/>
+          <path d="M60 216 Q140 160 220 196" stroke="#8c9ca3" stroke-width="2" fill="none" stroke-dasharray="10 8"/>
+          <ellipse cx="120" cy="190" rx="46" ry="12" fill="#a8bcc4" opacity=".55"/>
+          <ellipse cx="120" cy="190" rx="26" ry="6" fill="#dce9ed" opacity=".6"/>
+        </svg>
+        <figcaption class="kl-wall-cap">雨后的自行车辙 <span>陈小满</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item" data-title="阳台上晾着的被子">
+        <svg viewBox="0 0 320 220" role="img" aria-label="冬日阳台上晾晒的花色棉被与阳光">
+          <rect width="320" height="220" fill="#f0e2cc"/>
+          <rect x="0" y="150" width="320" height="70" fill="#d4bd9c"/>
+          <rect x="20" y="40" width="280" height="6" rx="3" fill="#8a6f4f"/>
+          <rect x="40" y="46" width="100" height="110" rx="6" fill="#e58b6a"/>
+          <path d="M40 76 L140 76 M40 106 L140 106" stroke="#f7d6c4" stroke-width="5"/>
+          <rect x="160" y="46" width="80" height="120" rx="6" fill="#8fb2a8"/>
+          <path d="M160 86 L240 86" stroke="#e2f1ec" stroke-width="5"/>
+          <circle cx="280" cy="120" r="34" fill="#ffffff" opacity=".55"/>
+        </svg>
+        <figcaption class="kl-wall-cap">阳台上晾着的被子 <span>阿原的厨房</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item kl-w-md" data-title="巷口小卖部的招牌">
+        <svg viewBox="0 0 640 220" role="img" aria-label="巷口小卖部老式招牌与暖色灯箱">
+          <rect width="640" height="220" fill="#2b3540"/>
+          <rect x="0" y="160" width="640" height="60" fill="#1c242c"/>
+          <rect x="180" y="40" width="290" height="96" rx="10" fill="#c94b2f"/>
+          <rect x="196" y="54" width="258" height="68" rx="6" fill="#f5d9a8"/>
+          <g fill="#a33a22"><rect x="228" y="76" width="32" height="24" rx="3"/><rect x="272" y="76" width="32" height="24" rx="3"/><rect x="316" y="76" width="32" height="24" rx="3"/><rect x="360" y="76" width="32" height="24" rx="3"/></g>
+          <circle cx="130" cy="120" r="26" fill="#f5d9a8" opacity=".75"/>
+          <rect x="480" y="120" width="90" height="60" rx="6" fill="#3b4750"/>
+        </svg>
+        <figcaption class="kl-wall-cap">巷口小卖部的招牌 <span>周记影像</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item" data-title="高速路上的落日">
+        <svg viewBox="0 0 320 220" role="img" aria-label="高速路上落日与迎面驶来的车辆">
+          <defs><linearGradient id="klW6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3c4c63"/><stop offset=".5" stop-color="#d9793f"/><stop offset="1" stop-color="#f2c07a"/></linearGradient></defs>
+          <rect width="320" height="220" fill="url(#klW6)"/>
+          <circle cx="220" cy="130" r="26" fill="#ffe1a3"/>
+          <path d="M0 160 L320 160 L320 220 L0 220 Z" fill="#3b3630"/>
+          <path d="M150 220 L168 160 L184 160 L206 220 Z" fill="#5c534a"/>
+          <g fill="#f7e4b8"><circle cx="120" cy="150" r="4"/><circle cx="96" cy="156" r="3"/></g>
+          <rect x="60" y="136" width="34" height="14" rx="4" fill="#2b2a27"/>
+          <rect x="240" y="142" width="40" height="16" rx="4" fill="#2b2a27"/>
+        </svg>
+        <figcaption class="kl-wall-cap">高速路上的落日 <span>野路子电台</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item" data-title="餐桌上的第一碗汤">
+        <svg viewBox="0 0 320 220" role="img" aria-label="餐桌上冒着热气的第一碗汤与筷子">
+          <rect width="320" height="220" fill="#f4e6d1"/>
+          <rect x="0" y="140" width="320" height="80" fill="#c99a6a"/>
+          <ellipse cx="160" cy="132" rx="76" ry="24" fill="#e6ebee"/>
+          <ellipse cx="160" cy="127" rx="64" ry="17" fill="#fdf8ef"/>
+          <ellipse cx="160" cy="125" rx="50" ry="12" fill="#e2a94c"/>
+          <path d="M150 96 q10 -16 -2 -30 q16 6 10 22" stroke="#d3cbbb" stroke-width="4" fill="none"/>
+          <rect x="228" y="96" width="6" height="56" rx="3" fill="#8a6a45" transform="rotate(12 231 124)"/>
+          <rect x="248" y="96" width="6" height="56" rx="3" fill="#8a6a45" transform="rotate(20 251 124)"/>
+        </svg>
+        <figcaption class="kl-wall-cap">餐桌上的第一碗汤 <span>阿原的厨房</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item kl-w-md" data-title="夜路尽头的便利店">
+        <svg viewBox="0 0 640 220" role="img" aria-label="深夜街道尽头亮着灯的便利店与长影">
+          <rect width="640" height="220" fill="#141c24"/>
+          <rect x="0" y="150" width="640" height="70" fill="#0d1318"/>
+          <rect x="360" y="60" width="210" height="100" rx="6" fill="#22303a"/>
+          <rect x="376" y="76" width="178" height="60" fill="#f5e2b0"/>
+          <g fill="#4a6b5a"><rect x="396" y="92" width="22" height="44"/><rect x="430" y="92" width="22" height="44"/><rect x="464" y="92" width="22" height="44"/><rect x="498" y="92" width="22" height="44"/></g>
+          <circle cx="360" cy="120" r="30" fill="#ffd38a" opacity=".22"/>
+          <path d="M0 190 Q200 176 360 190 T640 186" stroke="#2a3b46" stroke-width="3" stroke-dasharray="16 12"/>
+          <rect x="300" y="150" width="26" height="42" rx="5" fill="#0a0f13"/>
+          <circle cx="300" cy="146" r="9" fill="#0a0f13"/>
+        </svg>
+        <figcaption class="kl-wall-cap">夜路尽头的便利店 <span>陈小满</span></figcaption>
+      </figure>
+      <figure class="kl-wall-item" data-title="院子里的旧藤椅">
+        <svg viewBox="0 0 320 220" role="img" aria-label="老院子里空着的旧藤椅与散落的阳光">
+          <rect width="320" height="220" fill="#cbd8c2"/>
+          <rect x="0" y="160" width="320" height="60" fill="#9db292"/>
+          <rect x="100" y="86" width="120" height="76" rx="10" fill="#a97e4e"/>
+          <path d="M110 104 L210 104 M110 122 L210 122 M110 140 L210 140" stroke="#c9a877" stroke-width="5"/>
+          <rect x="96" y="160" width="10" height="34" rx="4" fill="#8a6540"/>
+          <rect x="214" y="160" width="10" height="34" rx="4" fill="#8a6540"/>
+          <circle cx="60" cy="60" r="34" fill="#e8f0dd" opacity=".65"/>
+          <g fill="#7d9a72"><circle cx="264" cy="168" r="16"/><circle cx="290" cy="176" r="12"/></g>
+        </svg>
+        <figcaption class="kl-wall-cap">院子里的旧藤椅 <span>北海归期</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 故事随笔 ============ -->
+<section class="kl-section" id="klStories">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Stories</small>编辑手记 · 那些没被剪进片子的瞬间</h2>
+      <p class="kl-section-desc">影像之外，还有一些只能用文字说完的话。这是编辑团队与创作者的真实随笔。</p>
+    </div>
+    <div class="kl-story-grid">
+      <article class="kl-story-card">
+        <h3>在绿皮车上，我听见了十一种方言</h3>
+        <p>拍《1600 公里》那支片子时，我最紧张的其实不是机器，而是怕打扰到别人。结果第三天凌晨，邻座大叔主动帮我把话筒架到行李架上，说“拍嘛，拍回去给家里人看看”。那一刻我突然明白，回家的路之所以动人，是因为它天然带着一种共享的善意。</p>
+        <div class="kl-story-foot"><span>林深见鹿</span><b>回家主题 · 拍摄手记</b></div>
+      </article>
+      <article class="kl-story-card">
+        <h3>我妈说她的菜谱从来不写克数</h3>
+        <p>复刻那三菜一汤，我打了七次电话。她每次都不耐烦：“盐看着放，汤滚三滚就行。”视频发出去之后，评论区最热的一条是“我妈也这么说”。原来所谓的家常，就是一代人用模糊的语言，把味道交给下一代人自己去试。</p>
+        <div class="kl-story-foot"><span>阿原的厨房</span><b>家常烹饪 · 创作笔记</b></div>
+      </article>
+      <article class="kl-story-card">
+        <h3>有些路，只有慢慢走才认得出来</h3>
+        <p>城市更新太快了，老巷子每隔半年就少一条。我拍巷口小卖部的时候，老板问我：“这有啥好拍的？”我说，等以后孩子问起来，总得有东西可以给他们看。他沉默了一会儿，把招牌上的灰擦了擦，说那你多拍两张。</p>
+        <div class="kl-story-foot"><span>周记影像</span><b>在地文化 · 田野观察</b></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 评价 + 榜单 ============ -->
+<section class="kl-section kl-review-section" id="klReviews">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Community Voice</small>用户口碑与社区评价</h2>
+      <p class="kl-section-desc">真实、多元、有温度。这些评价来自长期使用平台的记录者与观众。</p>
+    </div>
+    <div class="kl-review-grid" style="margin-bottom:clamp(26px,4vw,44px);">
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#0f766e;">周</span>
+          <div class="kl-review-who"><strong>周舟</strong><span>连续使用 2 年</span></div>
+          <span class="kl-review-stars">★★★★★</span>
+        </div>
+        <p>最打动我的是这里不追求精致到失真的画面。很多作品就是手机随手拍的，但恰恰因为粗糙，反而更接近生活本来的样子。每次加班到很晚，打开「夜行」频道看几条，心会静下来。</p>
+      </article>
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#b45309;">老</span>
+          <div class="kl-review-who"><strong>老周的相机</strong><span>认证创作者</span></div>
+          <span class="kl-review-stars">★★★★★</span>
+        </div>
+        <p>作为创作者，我很看重平台的审核与推荐机制。它不会只推流量内容，编辑真的会认真看完整支片子再给建议。我第一次入选专题的时候，收到了一份很详细的修改意见，那种被认真对待的感觉很难得。</p>
+      </article>
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#7c3aed;">小</span>
+          <div class="kl-review-who"><strong>小满不加班</strong><span>普通观众</span></div>
+          <span class="kl-review-stars">★★★★☆</span>
+        </div>
+        <p>内容是真的好，尤其喜欢「二十座城的黄昏六点」这个企划，同一时间不同城市，看完会想给家里打个电话。唯一的小期待是希望移动端加载再快一点，有时候在地铁里会卡。</p>
+      </article>
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#1d4ed8;">阿</span>
+          <div class="kl-review-who"><strong>阿穗</strong><span>投稿新手</span></div>
+          <span class="kl-review-stars">★★★★★</span>
+        </div>
+        <p>完全零基础，按照平台的「新人第一支短片」模板拍了我家猫和窗外的雨，居然被推荐到首页了。评论区还有人认真问拍摄参数，那种被看见的感觉，比点赞数字本身重要多了。</p>
+      </article>
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#be123c;">北</span>
+          <div class="kl-review-who"><strong>北方有雪</strong><span>长期订阅</span></div>
+          <span class="kl-review-stars">★★★★★</span>
+        </div>
+        <p>我常年在国外，看「回家的路」这个专题几乎是种固定仪式。有些片子拍的就是我老家的站台、我小时候坐过的公交线路，隔着屏幕都能闻到味道。这个平台对我来说不只是内容站，更像一个情感出口。</p>
+      </article>
+      <article class="kl-review-card">
+        <div class="kl-review-top">
+          <span class="kl-avatar" style="background:#334155;">企</span>
+          <div class="kl-review-who"><strong>知行品牌部</strong><span>合作品牌方</span></div>
+          <span class="kl-review-stars">★★★★☆</span>
+        </div>
+        <p>我们和平台共创过一支品牌故事短片，最大的感受是他们真的会拒绝套路。提案里想加的口号被拿掉了，换成了拍摄对象的日常对话。上线后的自然转发量远超预期，说明真实表达是有力量的。</p>
+      </article>
+    </div>
+
+    <div class="kl-rank-grid">
+      <div class="kl-rank-card">
+        <h3><i></i>本周热度榜</h3>
+        <ul class="kl-rank-list">
+          <li><span class="kl-rank-num">1</span><span>从南到北 1600 公里</span><b>2.4 万</b></li>
+          <li><span class="kl-rank-num">2</span><span>我爸修了四十年自行车</span><b>1.8 万</b></li>
+          <li><span class="kl-rank-num">3</span><span>末班车之后</span><b>1.1 万</b></li>
+          <li><span class="kl-rank-num">4</span><span>妈妈的三菜一汤</span><b>8623</b></li>
+          <li><span class="kl-rank-num">5</span><span>六点半的菜市场</span><b>6741</b></li>
+        </ul>
+      </div>
+      <div class="kl-rank-card">
+        <h3><i></i>新人榜</h3>
+        <ul class="kl-rank-list">
+          <li><span class="kl-rank-num">1</span><span>在阳台种菜的第七个月</span><b>新人 · 阿穗</b></li>
+          <li><span class="kl-rank-num">2</span><span>我第一次拍下了外婆</span><b>新人 · 小陆</b></li>
+          <li><span class="kl-rank-num">3</span><span>楼下那家修鞋摊</span><b>新人 · 木木</b></li>
+          <li><span class="kl-rank-num">4</span><span>地铁早高峰的十四分钟</span><b>新人 · 阿青</b></li>
+          <li><span class="kl-rank-num">5</span><span>房东留下的那盆绿萝</span><b>新人 · 小柯</b></li>
+        </ul>
+      </div>
+      <div class="kl-rank-card">
+        <h3><i></i>口碑榜</h3>
+        <ul class="kl-rank-list">
+          <li><span class="kl-rank-num">1</span><span>父亲与旧自行车</span><b>98.6 分</b></li>
+          <li><span class="kl-rank-num">2</span><span>外婆的一天</span><b>98.1 分</b></li>
+          <li><span class="kl-rank-num">3</span><span>门口的三十秒</span><b>97.8 分</b></li>
+          <li><span class="kl-rank-num">4</span><span>冬夜里的便利店</span><b>97.4 分</b></li>
+          <li><span class="kl-rank-num">5</span><span>归途十一种方言</span><b>97.0 分</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 创作灵感 / 工具 ============ -->
+<section class="kl-section" id="klTools">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Creative Kit</small>创作灵感与实用工具</h2>
+      <p class="kl-section-desc">不知道拍什么、怎么剪？这里有平台长期整理的选题思路与轻量工具，帮你迈出第一步。</p>
+    </div>
+    <div class="kl-tool-grid">
+      <article class="kl-tool-card">
+        <div class="kl-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M4 9h16M8 5v4"/></svg></div>
+        <h3>脚本灵感库</h3>
+        <p>按「归途」「家常」「城市」「人物」四类整理的开放式脚本框架，不需要专业设备，一部手机就能开拍。</p>
+        <div class="kl-tool-samples"><span>一个镜头的回家</span><span>拍下你家的门</span><span>声音地图</span></div>
+      </article>
+      <article class="kl-tool-card">
+        <div class="kl-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18 L10 8 L14 14 L20 4"/><path d="M4 4v16h16"/></svg></div>
+        <h3>标题与选题建议</h3>
+        <p>输入你拍到的一个细节，工具会给出三组不同风格的标题方向，帮助你更快找到适合的表达角度。</p>
+        <div class="kl-tool-samples"><span>细节优先</span><span>情绪优先</span><span>悬念优先</span></div>
+      </article>
+      <article class="kl-tool-card">
+        <div class="kl-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7 L16 7 M7 8 L11 16 M17 8 L13 16"/></svg></div>
+        <h3>剪辑思路模板</h3>
+        <p>提供时间轴式的剪辑结构参考：如何用三段式讲清楚一次回家，如何在三十秒内建立情绪。</p>
+        <div class="kl-tool-samples"><span>三段式归途</span><span>对比剪辑</span><span>静默收尾</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 企业动态 ============ -->
+<section class="kl-section" id="klNews" style="padding-top:0;">
+  <div class="kl-section-inner">
+    <div class="kl-section-head">
+      <h2><small>Updates</small>企业动态与内容更新</h2>
+      <p class="kl-section-desc">平台运营与内容生态的最新进展，保持透明，持续运营。</p>
+      <a class="kl-link-more" href="#klContact">订阅更新动态 →</a>
+    </div>
+    <div class="kl-news-list">
+      <div class="kl-news-item">
+        <span class="kl-news-date">2026-11-18</span>
+        <div class="kl-news-main">
+          <strong>「回家的路」冬季主题企划正式上线</strong>
+          <p>首批收录 6 支原创短片，覆盖长途迁徙、城市通勤与短途返乡三种尺度，即日起在焦点影像区轮播推荐。</p>
+        </div>
+        <span class="kl-news-tag kl-tag-new">官方发布</span>
+      </div>
+      <div class="kl-news-item">
+        <span class="kl-news-date">2026-11-14</span>
+        <div class="kl-news-main">
+          <strong>创作者扶持计划第 4 期入选名单公布</strong>
+          <p>共 32 位创作者入选，将获得首页推荐位、拍摄设备支持与编辑一对一辅导，扶持周期为三个月。</p>
+        </div>
+        <span class="kl-news-tag">创作者</span>
+      </div>
+      <div class="kl-news-item">
+        <span class="kl-news-date">2026-11-08</span>
+        <div class="kl-news-main">
+          <strong>移动端「今日美好」频道完成新一轮更新</strong>
+          <p>新增回家路线攻略合集与城市夜行专题入口，优化了弱网环境下的视频加载体验与进度记忆功能。</p>
+        </div>
+        <span class="kl-news-tag">产品更新</span>
+      </div>
+      <div class="kl-news-item">
+        <span class="kl-news-date">2026-10-29</span>
+        <div class="kl-news-main">
+          <strong>与六个城市的本地创作者完成合作签约</strong>
+          <p>平台在地内容网络进一步扩展，未来一年将围绕城市黄昏、菜市场与老街区开展系列联合记录。</p>
+        </div>
+        <span class="kl-news-tag">合作动态</span>
+      </div>
+      <div class="kl-news-item">
+        <span class="kl-news-date">2026-10-16</span>
+        <div class="kl-news-main">
+          <strong>《在路上的人》职业归途访谈上线第六集</strong>
+          <p>本集聚焦跨城通勤的医护工作者，讨论职业身份与家庭角色之间的时间分配，单集时长 28 分钟。</p>
+        </div>
+        <span class="kl-news-tag">精品内容</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="kl-section" id="klFaq" style="background:var(--kl-cream-2);padding-top:clamp(44px,6vw,80px);">
+  <div class="kl-section-inner">
+    <div class="kl-section-head" style="justify-content:center;text-align:center;">
+      <h2 style="margin:0 auto;"><small>Help Center</small>常见问题</h2>
+    </div>
+    <div class="kl-faq" style="margin-top:clamp(20px,3vw,32px);">
+      <details open>
+        <summary>平台的「回家的路」主题内容主要讲什么？</summary>
+        <p>它并不局限于长途返乡，而是把“回家”理解为一个开放的生活切口：包括通勤回家、探亲归途、回到出生地、重新走进某种熟悉场景等。内容形态覆盖纪录短片、人物访谈、家常烹饪、城市夜行与在地文化观察，强调真实表达与细节呈现。</p>
+      </details>
+      <details>
+        <summary>我想投稿，但没有任何拍摄经验，可以参与吗？</summary>
+        <p>可以。平台设有「新人第一支短片」扶持计划，提供脚本框架、剪辑模板与选题建议，并安排编辑进行基础辅导。只要内容真实、原创，画面是否精致并不是唯一的评判标准。投稿入口在页面顶部和底部均有提供，提交后通常七个工作日内会收到反馈。</p>
+      </details>
+      <details>
+        <summary>投稿作品的版权归属怎么处理？</summary>
+        <p>作品版权始终归创作者本人所有。平台会就展示范围、推荐周期与使用场景与创作者签署明确授权，不会擅自将作品用于商业二次创作。若涉及企业合作，需单独取得创作者书面同意，并明确收益分配方式。平台坚持正版高清与版权清晰的内容标准。</p>
+      </details>
+      <details>
+        <summary>平台的内容审核大概需要多久？</summary>
+        <p>常规投稿的初审一般在三到五个工作日内完成，重点核验原创性与基本事实。进入专题或首页推荐的候选作品会增加一轮社区评审，整体周期约七到十个工作日。若作品需要修改，编辑会在反馈中给出具体的修改建议，而不是简单退回。</p>
+      </details>
+      <details>
+        <summary>企业或品牌方可以合作拍摄品牌故事吗？</summary>
+        <p>可以。平台的「企业品牌故事影像档案」长期开放合作，由平台负责内容策划、拍摄执行与品质把控，强调真实场景与日常表达，避免空洞口号。合作品牌保留完整版权与二次使用权利。具体合作方式可通过页面底部的联系邮箱沟通。</p>
+      </details>
+      <details>
+        <summary>平台上的内容可以转载或二次剪辑吗？</summary>
+        <p>未经创作者本人与平台双方授权，不建议进行搬运、截取或二次剪辑。若为个人学习、评论引用等合理使用场景，请注明原作品标题与创作者昵称。平台鼓励通过官方分享功能传播作品，分享时会自动携带作者署名信息，这也是我们对创作者最基本的尊重。</p>
+      </details>
+      <details>
+        <summary>如何申请成为签约创作者？</summary>
+        <p>在平台持续投稿并拥有一定数量原创作品后，页面会开放认证申请入口。审核主要参考内容原创度、更新稳定性与社区口碑三项指标，不单纯以粉丝量作为标准。通过认证的创作者可参与专题共创、获得推荐资源，并优先参与线下放映与交流活动。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系 / 投稿 ============ -->
+<section class="kl-section kl-contact-section" id="klContact">
+  <div class="kl-section-inner">
+    <div class="kl-contact-grid">
+      <div>
+        <h2>把你回家的路，交给看料认真保存</h2>
+        <p>无论是一段三分钟的通勤记录，还是一支二十五分钟的深度访谈，只要它真实、原创、有细节，我们都愿意认真看完。平台长期开放投稿与合作通道，也欢迎品牌方与我们共同探索有温度的品牌故事表达方式。你的一次上传，也许会成为另一个人今晚的陪伴。</p>
+        <div class="kl-contact-actions">
+          <button type="button" class="kl-btn kl-btn-primary" id="klSubmitBtn2">立即投稿</button>
+          <button type="button" class="kl-btn kl-btn-ghost" id="klShareBtn2" style="background:rgba(255,255,255,.08);color:#f7ede1;border-color:rgba(247,237,225,.24);">分享本页</button>
+          <button type="button" class="kl-btn kl-btn-ghost" id="klFeedbackBtn" style="background:rgba(255,255,255,.08);color:#f7ede1;border-color:rgba(247,237,225,.24);">问题反馈</button>
+        </div>
+      </div>
+      <aside class="kl-contact-card">
+        <h3>官方联系通道</h3>
+        <ul>
+          <li><b>投稿邮箱</b><span>create@kanliao-life.cn</span></li>
+          <li><b>合作咨询</b><span>brand@kanliao-life.cn</span></li>
+          <li><b>媒体联络</b><span>press@kanliao-life.cn</span></li>
+          <li><b>客服时间</b><span>周一至周五 10:00 - 19:00</span></li>
+          <li><b>运营主体</b><span>看料生活影像（杭州）有限公司</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="kl-site-footer">
+  <div class="kl-footer-inner">
+    <div class="kl-footer-top">
+      <div class="kl-footer-brand">
+        <span class="kl-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M20 34 L32 22 L44 34 L44 46 L38 46 L38 38 L26 38 L26 46 L20 46 Z" fill="#fff7ed"/></svg>
+        </span>
+        <strong>看料今日美好生活回家的路</strong>
+        <p>看料生活影像官方站点，专注生活影像与归途叙事的原创内容社区。我们坚持正版高清、持续运营与用户至上，用专业与匠心记录每一段值得被留下的日常。</p>
+      </div>
+      <div class="kl-footer-col">
+        <h3>内容频道</h3>
+        <ul>
+          <li><a href="#klFocus">焦点影像</a></li>
+          <li><a href="#klTopics">专题企划</a></li>
+          <li><a href="#klWall">作品墙</a></li>
+          <li><a href="#klStories">编辑手记</a></li>
+        </ul>
+      </div>
+      <div class="kl-footer-col">
+        <h3>关于平台</h3>
+        <ul>
+          <li><a href="#klAbout">品牌故事</a></li>
+          <li><a href="#klCreators">创作者矩阵</a></li>
+          <li><a href="#klNews">企业动态</a></li>
+          <li><a href="#klReviews">用户口碑</a></li>
+        </ul>
+      </div>
+      <div class="kl-footer-col">
+        <h3>帮助与支持</h3>
+        <ul>
+          <li><a href="#klFaq">常见问题</a></li>
+          <li><a href="#klTools">创作工具</a></li>
+          <li><a href="#klContact">投稿合作</a></li>
+          <li><a href="#klContact">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="kl-footer-bottom">
+      <span>© 2026 看料生活影像（杭州）有限公司 · 官方网站 · 版权所有 · 持续运营中</span>
+      <div class="kl-footer-links">
+        <a href="#klTop">返回顶部</a>
+        <a href="#klAbout">品牌理念</a>
+        <a href="#klFaq">内容规范</a>
+        <a href="#klContact">商务合作</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 回到顶部 ============ -->
+<button type="button" class="kl-back-top" id="klBackTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<!-- ============ Toast ============ -->
+<div class="kl-toast" id="klToast" role="status" aria-live="polite"></div>
+
+<!-- ============ 弹窗：投稿 ============ -->
+<div class="kl-modal" id="klSubmitModal" role="dialog" aria-modal="true" aria-labelledby="klSubmitTitle">
+  <div class="kl-modal-box" style="position:relative;">
+    <button type="button" class="kl-modal-close" data-close="klSubmitModal" aria-label="关闭">×</button>
+    <h3 id="klSubmitTitle">投稿至「回家的路」企划</h3>
+    <p>填写基本信息，编辑会在七个工作日内与你联系。请确保作品为本人原创。</p>
+    <form class="kl-modal-form" id="klSubmitForm">
+      <div><label for="klFormName">称呼 / 创作者昵称</label><input id="klFormName" type="text" placeholder="例如：小巷放映员" required></div>
+      <div><label for="klFormMail">联系邮箱</label><input id="klFormMail" type="email" placeholder="用于接收审核反馈" required></div>
+      <div>
+        <label for="klFormType">内容方向</label>
+        <select id="klFormType">
+          <option>长途归途记录</option>
+          <option>城市夜行 / 通勤</option>
+          <option>家常烹饪 / 家庭</option>
+          <option>人物访谈</option>
+          <option>在地文化与老街</option>
+          <option>其他生活影像</option>
+        </select>
+      </div>
+      <div><label for="klFormDesc">作品简介</label><textarea id="klFormDesc" placeholder="一句话说清楚它记录了谁、在哪、发生了什么"></textarea></div>
+      <button type="submit" class="kl-btn kl-btn-primary" style="width:100%;">提交投稿信息</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ 弹窗：分享 ============ -->
+<div class="kl-modal" id="klShareModal" role="dialog" aria-modal="true" aria-labelledby="klShareTitle">
+  <div class="kl-modal-box" style="position:relative;">
+    <button type="button" class="kl-modal-close" data-close="klShareModal" aria-label="关闭">×</button>
+    <h3 id="klShareTitle">分享给还想回家的人</h3>
+    <p>把这份关于归途的影像清单，转给那个你惦记的人。</p>
+    <div class="kl-share-row">
+      <button type="button" data-share="微信">微信</button>
+      <button type="button" data-share="微博">微博</button>
+      <button type="button" data-share="QQ">QQ</button>
+      <button type="button" data-share="朋友圈">朋友圈</button>
+    </div>
+    <button type="button" class="kl-btn kl-btn-ghost" id="klCopyLink" style="width:100%;">复制本页链接</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：创作者档案 ============ -->
+<div class="kl-modal" id="klCreatorModal" role="dialog" aria-modal="true" aria-labelledby="klCreatorName">
+  <div class="kl-modal-box" style="position:relative;">
+    <button type="button" class="kl-modal-close" data-close="klCreatorModal" aria-label="关闭">×</button>
+    <h3 id="klCreatorName">创作者</h3>
+    <p id="klCreatorDesc"></p>
+    <div class="kl-tool-samples" id="klCreatorTags" style="margin-bottom:14px;"></div>
+    <button type="button" class="kl-btn kl-btn-primary" id="klFollowBtn" style="width:100%;">关注这位创作者</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：反馈 ============ -->
+<div class="kl-modal" id="klFeedbackModal" role="dialog" aria-modal="true" aria-labelledby="klFeedbackTitle">
+  <div class="kl-modal-box" style="position:relative;">
+    <button type="button" class="kl-modal-close" data-close="klFeedbackModal" aria-label="关闭">×</button>
+    <h3 id="klFeedbackTitle">问题反馈</h3>
+    <p>遇到内容、功能或版权方面的问题，请告诉我们，平台会尽快处理。</p>
+    <form class="kl-modal-form" id="klFeedbackForm">
+      <div>
+        <label for="klFbType">反馈类型</label>
+        <select id="klFbType">
+          <option>内容问题</option>
+          <option>功能异常</option>
+          <option>版权投诉</option>
+          <option>合作咨询</option>
+        </select>
+      </div>
+      <div><label for="klFbDesc">详细说明</label><textarea id="klFbDesc" placeholder="请描述具体情况，便于我们更快定位"></textarea></div>
+      <button type="submit" class="kl-btn kl-btn-primary" style="width:100%;">提交反馈</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- 通用 Toast ---------- */
+  var toastEl = document.getElementById('klToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('kl-is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('kl-is-show');
+    }, 2200);
+  }
+
+  /* ---------- 公告条关闭 ---------- */
+  var noticeBar = document.getElementById('klNoticeBar');
+  var noticeClose = document.getElementById('klNoticeClose');
+  if(noticeClose && noticeBar){
+    noticeClose.addEventListener('click', function(){
+      noticeBar.style.display = 'none';
+      document.documentElement.style.setProperty('--kl-sticky-h','64px');
+    });
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var navToggle = document.getElementById('klNavToggle');
+  var mainNav = document.getElementById('klMainNav');
+  if(navToggle && mainNav){
+    navToggle.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('kl-is-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('kl-is-open');
+        navToggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('klSearchInput');
+  var searchBtn = document.getElementById('klSearchBtn');
+  var searchFeedback = document.getElementById('klSearchFeedback');
+  function runSearch(){
+    var kw = (searchInput && searchInput.value || '').trim();
+    if(!kw){
+      if(searchFeedback){
+        searchFeedback.innerHTML = '试试搜索 <b>回家的路</b>、<b>夜行</b>、<b>家常</b> 或某位创作者的昵称。';
+        searchFeedback.classList.add('kl-is-open');
+      }
+      return;
+    }
+    var hit = document.querySelectorAll('.kl-video-card h3, .kl-topic-card h3, .kl-creator-card h3, .kl-wall-cap');
+    var count = 0;
+    var firstTarget = null;
+    Array.prototype.forEach.call(hit, function(el){
+      var text = el.textContent || '';
+      if(text.indexOf(kw) > -1){
+        count++;
+        if(!firstTarget){
+          firstTarget = el.closest('section') || el;
+        }
+      }
+    });
+    if(searchFeedback){
+      if(count > 0){
+        searchFeedback.innerHTML = '找到 <b>' + count + '</b> 个与「' + kw.replace(/[<>&]/g,'') + '」相关的内容单元，已为你定位到第一个相关板块。';
+        searchFeedback.classList.add('kl-is-open');
+        if(firstTarget && firstTarget.scrollIntoView){
+          firstTarget.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      }else{
+        searchFeedback.innerHTML = '暂时没有与「' + kw.replace(/[<>&]/g,'') + '」直接匹配的内容，你可以换用更短的词，或浏览焦点影像与专题企划。';
+        searchFeedback.classList.add('kl-is-open');
+      }
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', runSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('focus', function(){
+      if(searchFeedback && !searchFeedback.classList.contains('kl-is-open')){
+        searchFeedback.innerHTML = '试试搜索 <b>回家的路</b>、<b>夜行</b>、<b>家常</b> 或某位创作者的昵称。';
+        searchFeedback.classList.add('kl-is-open');
+      }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(!searchFeedback) return;
+    if(e.target === searchInput || e.target === searchBtn || searchFeedback.contains(e.target)) return;
+    if(searchFeedback.classList.contains('kl-is-open') && !(e.target.closest && e.target.closest('.kl-search'))){
+      searchFeedback.classList.remove('kl-is-open');
+    }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function parseCount(txt){
+    if(!txt) return 0;
+    var t = txt.replace(/\s/g,'');
+    if(t.indexOf('万') > -1){
+      return Math.round(parseFloat(t) * 10000);
+    }
+    return parseInt(t, 10) || 0;
+  }
+  function formatCount(n){
+    if(n >= 10000){
+      return (n/10000).toFixed(1).replace(/\.0$/,'') + ' 万';
+    }
+    return String(n);
+  }
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest ? e.target.closest('.kl-like-btn') : null;
+    if(likeBtn){
+      var meta = likeBtn.closest('.kl-video-meta');
+      var countEl = meta ? meta.querySelector('.kl-like-count') : null;
+      var liked = likeBtn.classList.toggle('kl-liked');
+      if(countEl){
+        var cur = parseCount(countEl.textContent);
+        cur = liked ? cur + 1 : Math.max(cur - 1, 0);
+        countEl.textContent = formatCount(cur);
+      }
+      var label = likeBtn.querySelector('span');
+      if(label) label.textContent = liked ? '已赞' : '点赞';
+      showToast(liked ? '已加入喜欢，感谢支持原创内容' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest ? e.target.closest('.kl-save-btn') : null;
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('kl-saved');
+      var t = saveBtn.querySelector('span');
+      if(t) t.textContent = saved ? '已收藏' : '收藏';
+      showToast(saved ? '已收藏到「我的美好清单」' : '已取消收藏');
+    }
+  });
+
+  /* ---------- 弹窗基础 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.add('kl-is-open'); document.body.style.overflow = 'hidden'; }
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.remove('kl-is-open'); document.body.style.overflow = ''; }
+  }
+  document.addEventListener('click', function(e){
+    var closer = e.target.closest ? e.target.closest('[data-close]') : null;
+    if(closer){
+      closeModal(closer.getAttribute('data-close'));
+      return;
+    }
+    if(e.target.classList && e.target.classList.contains('kl-modal')){
+      e.target.classList.remove('kl-is-open');
+      document.body.style.overflow = '';
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      Array.prototype.forEach.call(document.querySelectorAll('.kl-modal.kl-is-open'), function(m){
+        m.classList.remove('kl-is-open');
+      });
+      document.body.style.overflow = '';
+      if(searchFeedback) searchFeedback.classList.remove('kl-is-open');
+    }
+  });
+
+  /* ---------- 投稿弹窗 ---------- */
+  var submitBtn = document.getElementById('klSubmitBtn');
+  var submitBtn2 = document.getElementById('klSubmitBtn2');
+  if(submitBtn) submitBtn.addEventListener('click', function(){ openModal('klSubmitModal'); });
+  if(submitBtn2) submitBtn2.addEventListener('click', function(){ openModal('klSubmitModal'); });
+
+  var submitForm = document.getElementById('klSubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('klFormName').value.trim();
+      var mail = document.getElementById('klFormMail').value.trim();
+      if(!name){ showToast('请填写称呼或创作者昵称'); return; }
+      if(!mail || mail.indexOf('@') < 1){ showToast('请填写有效的联系邮箱'); return; }
+      closeModal('klSubmitModal');
+      submitForm.reset();
+      showToast('投稿信息已提交，编辑会在七个工作日内联系你');
+    });
+  }
+
+  /* ---------- 分享 ---------- */
+  var shareTopBtn = document.getElementById('klShareTopBtn');
+  var shareBtn2 = document.getElementById('klShareBtn2');
+  function openShare(){ openModal('klShareModal'); }
+  if(shareTopBtn) shareTopBtn.addEventListener('click', openShare);
+  if(shareBtn2) shareBtn2.addEventListener('click', openShare);
+
+  document.addEventListener('click', function(e){
+    var sb = e.target.closest ? e.target.closest('[data-share]') : null;
+    if(sb){
+      var ch = sb.getAttribute('data-share');
+      showToast('已准备分享到' + ch + '，请在弹出的窗口完成操作');
+      closeModal('klShareModal');
+    }
+  });
+
+  var copyLink = document.getElementById('klCopyLink');
+  if(copyLink){
+    copyLink.addEventListener('click', function(){
+      var link = window.location.href;
+      function done(){
+        closeModal('klShareModal');
+        showToast('本页链接已复制，可粘贴分享给朋友');
+      }
+      function fallback(){
+        try{
+          var ta = document.createElement('textarea');
+          ta.value = link;
+          ta.style.position = 'fixed';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          done();
+        }catch(err){
+          showToast('复制失败，请手动复制地址栏链接');
+        }
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(done).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  }
+
+  /* ---------- 创作者档案 ---------- */
+  var creatorData = {
+    '林深见鹿': {desc:'纪录片导演出身，长期拍摄长途交通与陌生人访谈，坚持不使用配乐，只用同期声还原旅途质感。代表作《从南到北 1600 公里》。', tags:['长途纪录','同期声','人物访谈']},
+    '阿原的厨房': {desc:'专注家常烹饪与情感食谱，擅长把一道菜背后的家庭记忆讲清楚。代表作《妈妈的三菜一汤》，单条作品口碑评分 97 分以上。', tags:['家常烹饪','情感食谱','日常记录']},
+    '陈小满': {desc:'长期拍摄夜间城市与公共交通，作品节奏缓慢、观察克制，被用户称为“安静的观察者”。代表作《末班车之后》。', tags:['城市探索','夜行影像','慢节奏']},
+    '许野的镜头': {desc:'专注普通人长访谈与家庭叙事，擅长在沉默里捕捉最有力量的表达。代表作《我爸修了四十年自行车》。', tags:['人物访谈','家庭叙事','长片']},
+    '周记影像': {desc:'走遍本地菜市场与老街巷，用镜头保存正在消失的生活细节，是平台在地内容方向的重要创作者。', tags:['在地文化','市井观察','老街']},
+    '野路子电台': {desc:'边开车边录音的旅行记录者，把路上的对话剪成短小的声音散文，作品常带有公路片气质。', tags:['旅行见闻','自驾','声音散文']},
+    '小巷放映员': {desc:'拍猫、拍雨、拍发呆，作品节奏极慢，却常被用户反复回看，是平台治愈影像方向的代表创作者。', tags:['治愈影像','日常记录','慢生活']},
+    '北海归期': {desc:'常年在北方拍摄冬季归途，镜头里总有雪、路灯和热气腾腾的窗，是「回家的路」冬季企划核心创作者。', tags:['雪国记录','冬季主题','归途']}
+  };
+  var creatorModalName = document.getElementById('klCreatorName');
+  var creatorModalDesc = document.getElementById('klCreatorDesc');
+  var creatorModalTags = document.getElementById('klCreatorTags');
+  var followBtn = document.getElementById('klFollowBtn');
+  var currentCreator = '';
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest ? e.target.closest('[data-creator]') : null;
+    if(!btn) return;
+    var name = btn.getAttribute('data-creator');
+    var data = creatorData[name];
+    currentCreator = name;
+    if(creatorModalName) creatorModalName.textContent = name;
+    if(creatorModalDesc && data) creatorModalDesc.textContent = data.desc;
+    if(creatorModalTags && data){
+      creatorModalTags.innerHTML = '';
+      data.tags.forEach(function(t){
+        var s = document.createElement('span');
+        s.textContent = t;
+        creatorModalTags.appendChild(s);
+      });
+    }
+    if(followBtn){
+      followBtn.textContent = '关注这位创作者';
+      followBtn.dataset.followed = '0';
+    }
+    openModal('klCreatorModal');
+  });
+  if(followBtn){
+    followBtn.addEventListener('click', function(){
+      var followed = followBtn.dataset.followed === '1';
+      followBtn.dataset.followed = followed ? '0' : '1';
+      followBtn.textContent = followed ? '关注这位创作者' : '已关注 · 第一时间看到更新';
+      showToast(followed ? '已取消关注' : ('已关注 ' + currentCreator + '，更新会出现在你的动态里'));
+    });
+  }
+
+  /* ---------- 反馈 ---------- */
+  var feedbackBtn = document.getElementById('klFeedbackBtn');
+  if(feedbackBtn) feedbackBtn.addEventListener('click', function(){ openModal('klFeedbackModal'); });
+  var feedbackForm = document.getElementById('klFeedbackForm');
+  if(feedbackForm){
+    feedbackForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal('klFeedbackModal');
+      feedbackForm.reset();
+      showToast('反馈已收到，平台会尽快核实并处理');
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('klBackTop');
+  function onScroll(){
+    if(!backTop) return;
+    if(window.scrollY > 520){
+      backTop.classList.add('kl-is-show');
+    }else{
+      backTop.classList.remove('kl-is-show');
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  var statEls = document.querySelectorAll('.kl-stat strong[data-count]');
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    Array.prototype.forEach.call(statEls, function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var start = 0;
+      var dur = 1200;
+      var t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(start + (target - start) * eased);
+        el.textContent = val.toLocaleString('zh-CN');
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if(statEls.length){
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ runCount(); io.disconnect(); }
+        });
+      }, {threshold:.4});
+      io.observe(statEls[0]);
+    }else{
+      runCount();
+    }
+  }
+
+  /* ---------- 作品墙点击 ---------- */
+  document.addEventListener('click', function(e){
+    var item = e.target.closest ? e.target.closest('.kl-wall-item') : null;
+    if(item){
+      var t = item.getAttribute('data-title') || '这幅作品';
+      showToast('已展开《' + t + '》的完整影像记录');
+    }
+  });
+
+})();
+</script>
+</body>
+  </html>
